@@ -1,0 +1,33 @@
+/* header----------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Gothic A1', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    color : #314570;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+button{
+    outline: none;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+g:not(svg) {
+    transform-origin: 0px 0px;
+}

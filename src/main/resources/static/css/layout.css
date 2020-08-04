@@ -1,0 +1,17 @@
+@import url("style.css");
+@import url("component.css");
+
+.header-box {
+    height: 70px;
+}
+
+#filter {
+    background:gray;
+    height:70px;
+}
+body {
+   overflow: hidden;
+}
+    #content {        
+        display:flex;    
+    }
