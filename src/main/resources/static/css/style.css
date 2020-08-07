@@ -1,8 +1,23 @@
-/* header----------------------- */
+
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
+
 * {
     box-sizing: border-box;
-    font-family: 'Gothic A1', sans-serif;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+.d-none{
+    display : none;
+}
+
+ul{
+  list-style: none;  
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
 }
 
 a {
@@ -10,18 +25,24 @@ a {
     cursor: pointer;
 }
 
-a:hover {
+/* a:hover {
     color : #314570;
     font-weight: bold;
     transition: 0.2s;
-}
+} */
 
 button{
     outline: none;
+    cursor : pointer;
+}
+
+
+button:hover{
+    opacity : 80%;
+    transition : 0.3s;
 }
 
 p {
-    display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
@@ -30,4 +51,62 @@ p {
 
 g:not(svg) {
     transform-origin: 0px 0px;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+table{
+    border-collapse: collapse;
+    border-spacing: 2px;
+}
+
+colgroup{
+    display : table-column-group;
+}
+
+col{
+    display : table-column;
+}
+
+div{
+    display : block;
+}
+
+tbody {
+    /* display: table-row-group; */
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: -internal-center;
+}
+
+input {
+    outline : none;
+}
+
+input[type="text"]:focus{
+    border : 0;
+    box-shadow: 0 0 10px #12295850;
+}
+
+input[type="textarea"]:focus{
+    border : 0;
+    box-shadow: 0 0 10px #12295850;
+}
+
+input[type="checkbox"]{
+    cursor : pointer;
+}
+
+input[type="radio"]{
+    cursor : pointer;
 }

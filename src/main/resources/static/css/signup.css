@@ -1,0 +1,46 @@
+@import url('http://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    height : 100vh;
+}
+
+.item{
+    width : 300px;
+    margin-bottom: 10px;
+    position : relative;
+}
+
+.item input[type = "text"]{
+    outline : none;
+    border : 1px solid lightgray;
+    height : 40px;
+    width :  100%;
+    box-sizing: border-box;
+    border-radius : 5px;
+    padding : 10px;
+    padding-left : 40px;
+}
+
+.item .fa{
+    position : absolute;
+    top : 0;
+    left : 0;
+    color : gray;
+    font-size: 24px;
+    text-align: center;
+    line-height : 40px;
+    width : 35px;
+}
+
+.item input[type="text"]:focus {
+    border-color : #a8dadc;
+    box-shadow : 0 0 20px #a8dadc;
+    border : 0;
+}
+
+.item input[type = "text"]:focus +.fa{
+    color : #457b9d;
+}

@@ -20,15 +20,27 @@ import com.mobang.web.entity.Position;
 @RequestMapping("/mobang/")
 public class MobangController {
 	
-	@GetMapping("")
-	public String index() {
+	@GetMapping("home")
+	public String index(HttpServletResponse response) {
+		response.setCharacterEncoding("UTF-8");
+		response.setContentType("text/html; charset=utf-8");
 		return "mobang.home";
 	}
 	
+	@GetMapping("login")
+	public String login(HttpServletResponse response) {
+		return "inc/login/login";
+	}
+	
+	@GetMapping("signup")
+	public String signup(HttpServletResponse response) {
+		return "inc/login/signup";
+	}
+	
 	@GetMapping("search")
-	public String search(HttpServletResponse res) {
-		res.setCharacterEncoding("UTF-8");
-		res.setContentType("text/html; charset=utf-8");
+	public String search(HttpServletResponse response) {
+		response.setCharacterEncoding("UTF-8");
+		response.setContentType("text/html; charset=utf-8");
 		return "mobang.search.main";
 	}
 	

@@ -4,14 +4,19 @@
        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 
 <tiles-definitions>
-	<definition name="mobang.*" template="/WEB-INF/view/inc/layout.jsp">
-		<put-attribute name="header" value="/WEB-INF/view/inc/header.html" />
-		<put-attribute name="main" value="/WEB-INF/view/mobang/{1}.html" />
+
+	<definition name="mobang.*.*" template="/WEB-INF/view/inc/layout.jsp">
+		<put-attribute name="header" value="/WEB-INF/view/inc/header.jsp" />
+		<put-attribute name="filter" value="/WEB-INF/view/mobang/search/filter.jsp" />
+		<put-attribute name="main" value="/WEB-INF/view/mobang/{1}/{2}.jsp" />
 	</definition>
 	
-	<definition name="mobang.*.*" template="/WEB-INF/view/inc/layout.jsp">
-		<put-attribute name="header" value="/WEB-INF/view/inc/header.html" />
-		<put-attribute name="filter" value="/WEB-INF/view/mobang/search/filter.html" />
-		<put-attribute name="main" value="/WEB-INF/view/mobang/{1}/{2}.html" />
+	<definition name="mobang.*" template="/WEB-INF/view/inc/layout.jsp">
+		<put-attribute name="header" value="/WEB-INF/view/inc/header.jsp" />
+		<put-attribute name="main" value="/WEB-INF/view/mobang/{1}.jsp" />
 	</definition>
+	
+	
+	
+
 </tiles-definitions>
