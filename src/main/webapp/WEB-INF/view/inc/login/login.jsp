@@ -17,21 +17,15 @@ button {
 <body>
 	<div id="login-page">
 		<div class="login-container">
-			<div class="closebtn-box">
-				<button class="close-btn">
-					<span>x</span>
-				</button>
-			</div>
 			<div class="login-box">
-
 				<h1 class="login-title">LOGIN</h1>
-
 				<form class="login-form">
-					<input type="text" class="input-id" placeholder="ID"> <input
-						type="text" class="input-pw" placeholder="PASSWORD">
+					<input type="text" class="input-id" placeholder="ID"> 
+					<input type="text" class="input-pw" placeholder="PASSWORD">
 					<div class="check-box">
-						<label class="saved-id"> <input type="checkbox"
-							name="login" value=""> <span></span>
+						<label class="saved-id"> 
+						<input type="checkbox" name="login" value="">
+						<span></span>
 							<p>SAVED ID</p>
 						</label>
 						<div class="forgot-pw">
@@ -42,17 +36,25 @@ button {
 						<span>LOGIN</span>
 					</button>
 				</form>
-
 				<div class="sns-btn">
-					<a href="#none"> <i class="fa fa-facebook"></i>
-					</a> <a href="#none"> <i class="fa fa-twitter"></i>
-					</a> <a href="#none"> <i class="fa fa-google-plus"></i>
-					</a> <a href="#none"> <i class="fa fa-youtube"></i>
-					</a> <a href="#none"> <i class="fa fa-instagram"></i>
+					<a href="#none"> 
+						<i class="fa fa-facebook"></i>
+					</a> 
+					<a href="#none"> 
+						<i class="fa fa-twitter"></i>
+					</a>
+					<a href="#none"> 
+						<i class="fa fa-google-plus"></i>
+					</a> 
+					<a href="#none"> 
+						<i class="fa fa-youtube"></i>
+					</a> 
+					<a href="#none"> 
+						<i class="fa fa-instagram"></i>
 					</a>
 				</div>
 
-				<div class="signup">
+				<div class="pop-signup">
 					<a href="signup">
 						<button>
 							<span>CREATE NEW ACCOUNT</span>

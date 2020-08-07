@@ -22,59 +22,14 @@
 		<nav class="right-menu">
 			<div class="right-menu-detail">
 				<a class="" href="search">방찾기</a>
-				<!-- <a class="" href="">분양</a> -->
-				<a class="" href="">관심목록</a> <a class="" href="room.html">방내놓기</a> <a
+				<a class="" href="">관심목록</a> 
+				<a class="" href="room.html">방내놓기</a> <a
 					class="" href="">알림 <i class="fa fa-bell-o"></i>
 				</a>
 			</div>
-				<a class="signup" href="login"> 회원가입 <span>.</span>로그인
+			<a class="signup" href="login"> 
+			회원가입 <span>.</span>로그인
 			</a>
 		</nav>
-		<!-- ================로그인화면=============== -->
-<!-- 		<div id="login-page" class="d-none">
-			<div class="login-container">
-				<div class="closebtn-box">
-					<button class="close-btn">
-						<span>x</span>
-					</button>
-				</div>
-				<div class="login-box">
-					<h1 class="login-title">LOGIN</h1>
-					<form class="login-form">
-						<input type="text" class="input-id" placeholder="ID"> <input
-							type="text" class="input-pw" placeholder="PASSWORD">
-						<div class="check-box">
-							<label class="saved-id"> <input type="checkbox"
-								name="login" value=""> <span></span>
-								<p>SAVED ID</p>
-							</label>
-							<div class="forgot-pw">
-								<a href="index.html">FORGOT PW</a>
-							</div>
-						</div>
-						<button class="login-btn">
-							<span>LOGIN</span>
-						</button>
-					</form>
-
-					<div class="sns-btn">
-						<a href="#none"> <i class="fa fa-facebook"></i>
-						</a> <a href="#none"> <i class="fa fa-twitter"></i>
-						</a> <a href="#none"> <i class="fa fa-google-plus"></i>
-						</a> <a href="#none"> <i class="fa fa-youtube"></i>
-						</a> <a href="#none"> <i class="fa fa-instagram"></i>
-						</a>
-					</div>
-
-					<div class="pop-signup">
-						<a href="../inc/signup.html">
-							<button>
-								<span>CREATE NEW ACCOUNT</span>
-							</button>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div> -->
 	</div>
 </header>
