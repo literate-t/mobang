@@ -1,0 +1,1142 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@import url('http://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+/* ===========================================header========================================== */
+
+.header-box{
+    background-color: rgb(255, 255, 255);
+    z-index : 21;
+    border-bottom: 1px solid rgb(235, 235, 235);
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    width : 1180px;
+    right : 0;
+}
+
+#header .logo{
+    float: left;
+    width : 80px;
+    height : 70px;
+    bottom : 15px;
+    position : relative;
+    
+}
+
+.logo>svg{
+    background: #314570;
+    width : 100%;
+    padding-left : 17px;
+    padding-top : 4px;
+    position :absolute;
+    top : 47%;
+    transform : translateY(0px, -50%);
+}
+
+.left-menu{
+    display : inline-block;
+    margin-left: 20px;
+    /* width : 250px; */
+}
+
+.left-menu a{
+    position : relative;
+    font-size: 13px;
+    color : rgb(136, 136, 136);
+}
+
+.left-menu a:hover{
+    color : #314570;
+    opacity : 80%;
+
+}
+
+.left-menu a:before{
+    position : absolute;
+    content : '';
+    background : #7584ad;
+    border-radius: 20px;
+    opacity : 80%;
+    height : 2px;
+    width : 0;
+    bottom : -4px;
+    transition : 0.5s;
+    left : 50%;
+    transform: translateX(-50%);
+}
+
+.left-menu a:hover:before{
+    width : 100%;
+}
+
+.left-menu>div{
+    display : inline-block;
+    width: 1px;
+    height: 15px;
+    vertical-align: middle;
+    background : rgb(221, 221, 221);
+    margin : 0px 12px;
+}
+
+.right-menu{
+    /* overflow: hidden; */
+    float : right;
+}
+
+.right-menu-detail{
+    display : inline-flex;
+    justify-content: space-evenly;
+    font-size: 17px;
+    line-height: 27px;
+    box-sizing: border-box;
+}
+
+.right-menu-detail a{
+    margin-right : 16px;
+    color : rgb(34, 34, 34);
+    font-size: 13px;
+    position :relative;
+    display : inline-block;
+}
+
+.right-menu-detail a:hover{
+    color : #314570;
+    opacity : 90%;
+}
+
+.right-menu-detail a:before{
+    position : absolute;
+    content : '';
+    background : #7584ad;
+    border-radius: 20px;
+    opacity : 80%;
+    height : 2px;
+    width : 0;
+    bottom : 0;
+    transition : 0.5s;
+    left : 50%;
+    transform: translateX(-50%);
+}
+
+.right-menu-detail a:hover:before{
+    width : 100%;
+}
+
+
+.member {
+    margin-right : 30px;
+    display : inline-flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    position : relative;
+}
+
+.member button{
+    width : 70px;
+    height : 50px;
+    border : 0;
+    border-radius: 50%;
+    background : transparent;
+    position: relative;
+}
+
+.member .fa{
+    color : #314570;
+}
+
+.member span{
+    color : #314570;
+}
+
+.member ul{
+    display : inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position : absolute;
+    top : 52px;
+    right : 0;
+    width : 240px;
+    padding : 0;
+    margin : 0;
+    border : 1px solid rgb(224, 224, 244);
+}
+
+.member li{
+    height : 52px;
+    width : 100%;
+    display : inline-flex;
+    align-items: center;
+    background : rgb(255, 255, 255);
+}
+
+.member li:nth-of-type(1){
+    border-bottom : 1px solid rgb(224, 224, 244);
+}
+
+.member a{
+    font-size: 13px;
+    padding-left : 20px;
+    color : rgb(136, 136, 136);
+}
+
+.member a:hover{
+    color : #314570;
+}
+
+.member ul:before{
+    content : '';
+    width : 12px;
+    height : 12px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: -7px;
+    right: 30px;
+    transform: rotate(45deg);
+    border-top: 1px solid rgb(224, 224, 244);
+    border-left: 1px solid rgb(224, 224, 244);
+}
+
+.member .d-none{
+    display : none;
+}
+
+/* ======================================main=============================== */
+/* checkbox-btn이랑 radio-btn 스타일 additional에 있음 */
+
+#main .content-container {
+    width : 1180px;
+    /* height : 3800px; */
+    overflow: hidden;
+    margin : auto;
+}
+
+#main .main-header {
+    width : 100%;
+    height : 156px;
+}
+
+.main-header>h1{
+    width : 100%;
+    margin : 70px auto 45px;
+    font-size : 33px;
+    line-height: 45px;
+    color : rgb(34, 34,34);
+    text-align: center;
+    font-weight : 400;
+}
+
+.main-header>ul {
+    width : 100%;
+    height : 57px;
+    padding : 0;
+    display : flex;
+    border-bottom : 1px solid rgba(232, 232, 232, 0.7);
+}
+
+.main-top li{
+    width : 50%;
+    height : inherit;
+    position : relative;
+}
+
+.main-top>li>a{
+    width : 100%;
+    height : inherit;
+    position : absolute;
+    text-align: center;
+    font-weight : 400;
+    color: rgb(136, 136, 136);
+    font-size: 16px;
+    line-height: 57px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+}
+
+.main-top>li>a:hover{
+    color : #314570;
+    font-weight : 500;
+}
+
+.main-header .active{
+    font-weight: 500;
+    color : rgb(34, 34, 34);
+    border-bottom : 1px solid rgb(72,72,72); 
+}
+
+/* ========================roomtype==================== */
+
+#main .roomtype{
+    width : 100%;
+    margin-bottom: 50px;
+    box-shadow : rgba(0, 0, 0, 0.05) 0px 1px 5px 0px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    border : 1px solid rgb(204, 204, 204);
+    overflow: hidden;
+}
+
+.roomtype>h1{
+    height : 60px;
+    width : 100%;
+    color : rgb(34, 34, 34);
+    font-size : 18px;
+    line-height : 60px;
+    text-align: center;
+    position : relative;
+    margin : 0;
+    border-bottom : 1px solid rgb(204, 204, 204);
+}
+
+.roomtype table{
+    width : 100%;
+}
+
+.roomtype-btns{
+    display : flex;
+}
+.buildingtype-btns{
+    display : flex;
+}
+
+.roomtype-table tr+tr{
+    border-top: 1px solid rgb(238, 238, 238);
+}
+/* ===========================location======================== */
+
+#main .location{
+    width : 100%;
+    border : 1px solid rgb(204, 204, 204);
+    border-radius: 4px;
+    margin-bottom : 50px;
+    box-shadow : rgba(0, 0, 0, 0.05) 0px 1px 5px 0px;
+}
+
+.location >h1{
+    height : 60px;
+    width : 100%;
+    color : rgb(34, 34, 34);
+    font-size : 18px;
+    line-height : 60px;
+    text-align: center;
+    position : relative;
+    margin : 0;
+    border-bottom : 1px solid rgb(204, 204, 204);
+}
+
+.location>h1>span{
+    position :  absolute;
+    display : flex;
+    justify-content: flex-end;
+    margin-right : 18px;
+    right : 14px;
+    top : 50%;
+    color : rgb(136, 136, 136);
+    font-size : 14px;
+    font-weight : 400;
+    transform: translateY(-50%);
+}
+
+.location table{
+    width: 100%;
+    position : relative;
+    display : block;
+}
+
+
+.location tbody tr {
+    width : 100%;
+    display : flex;
+}
+
+.location table th{
+    width : 150px;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight : 500;
+    color : rgb(34, 34, 34);
+    background : rgb(249, 249, 249);
+}
+
+.locationtds{
+    width: 1027px;
+    padding : 20px;
+    display : flex;
+    justify-content: space-between;
+}
+
+.location-left {
+    width: 530px;
+    padding : 6px;
+}
+
+.location-left p{
+    display : inline-block;
+    width : 530px;
+    height: 20px;
+    margin : 0;
+}
+
+.location-search{
+    display : flex;
+}
+
+.location-search input{
+    width: 430px;
+    height: 46px;
+    border : 1px solid rgb(218, 210, 214);
+}
+
+.location-search button{
+    width : 90px;
+    height: 46px;
+    margin-left : 10px;
+    background : #457b9d;
+    border : 0;
+    border-radius : 5px;
+    color : #fff;
+}
+
+.location-display {
+    width : 530px;
+    height : 100px;
+    display : inline-block;
+    margin-right : 0;
+}
+
+.location-text span{
+    width : inherit;
+    height: inherit;
+}
+
+.location-detail{
+    width: 530px;
+    margin-top : 10px;
+    margin-bottom : 10px;
+    margin-right : 0px;
+    display : inline-block;
+    box-sizing: border-box;
+}
+
+.location-detail input {
+    width: 100%;
+    height: 46px;
+    border : 1px solid rgb(218, 210, 214);
+}
+
+.detail1{
+    width :260px;
+    position : relative;
+    display : inline-block;
+}
+
+.detail1::after{
+    content: "동";
+}
+
+.detail1::after{
+    width : 48px;
+    height : 46px;
+    position : absolute;
+    top : 0;
+    right : 0;
+    text-align: center;
+    box-sizing: border-box;
+    border : 1px solid rgb(218, 210, 214);
+    line-height: 44px;
+    color : rgb(102, 102, 102);
+}
+
+.detail2{
+    width: 260px;
+    position: relative;
+    display : inline-block;
+}
+
+.detail2::after{
+    content: "호";
+}
+
+.detail2::after{
+    width : 48px;
+    height : 46px;
+    position : absolute;
+    top : 0;
+    right : 0;
+    text-align: center;
+    box-sizing: border-box;
+    border : 1px solid rgb(218, 210, 214);
+    line-height: 44px;
+    color : rgb(102, 102, 102);
+}
+
+.location-checkbox{
+    margin-bottom : 20px;
+}
+
+.location-checkbox label{
+    display: block;
+    height: 22px;
+    padding-left: 23px;
+    position: relative;
+    cursor: pointer;
+}
+
+.location-checkbox .check-box{
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.location-checkbox .checkbox-span{
+    float: left;
+    width: 22px;
+    height: 22px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(221, 221, 221);
+    border-image: initial;
+    border-radius: 3px;
+}
+
+.location-checkbox .span-text{
+    margin-left: 8px;
+    position : relative;
+}
+
+.location-notice {
+    height : 22px;
+    line-height: 22px;
+}
+
+.location-notice a{
+    text-decoration: underline;
+    color : #314570;
+    margin-right : 10px;;
+}
+
+.location-map {
+    width: 440px;
+    overflow: hidden;
+    position : relative;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(221, 221, 221);
+}
+
+.location-map p{
+    width : 100%;
+    color: rgb(136, 136, 136);
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    margin-top : 50px;
+}
+
+/* =========================dealtype========================= */
+
+#main .dealtype {
+    width : 100%;
+    border : 1px solid rgb(204, 204, 204);
+    border-radius: 4px;
+    margin-bottom : 50px;
+    box-shadow : rgba(0, 0, 0, 0.05) 0px 1px 5px 0px;
+}
+
+.dealtype>h1{
+    height : 60px;
+    width : 100%;
+    color : rgb(34, 34, 34);
+    font-size : 18px;
+    line-height : 60px;
+    text-align: center;
+    position : relative;
+    margin : 0;
+    border-bottom : 1px solid rgb(204, 204, 204);
+}
+
+.dealtype table{
+    width: 100%;
+    display : inline-block;
+}
+
+.dealtype table tbody{
+    width : 100%;
+    display : block;
+}
+
+.deal-title{
+    width : 150px;
+    font-size: 15px;
+    font-weight : 500;
+    color : rgb(34, 34, 34);
+    background : rgb(249, 249, 249);
+    padding : 0;
+}
+
+.deal-wrap{
+    display : block;
+    position: relative;
+    padding: 12px 20px;
+}
+
+.deal-wrap button{
+    width : 130px;
+    height : 46px;
+    margin-left : 20px;
+    margin-top : 10px;
+    margin-bottom : 10px;
+    border : 1px solid rgb(208, 210, 214);
+    background : rgb(255, 255, 255);
+    border-radius: 5px;
+    color : rgb(34, 34, 34);
+    cursor : pointer;
+}
+
+/* ===============================baseinfo============================== */
+
+#main .baseinfo {
+    width : 100%;
+    /* overflow: hidden; */
+    border : 1px solid rgb(204, 204, 204);
+    border-radius: 4px;
+    margin-bottom : 50px;
+    box-shadow : rgba(0, 0, 0, 0.05) 0px 1px 5px 0px;
+}
+
+.baseinfo h1{
+    height : 60px;
+    width : 100%;
+    color : rgb(34, 34, 34);
+    font-size : 18px;
+    line-height : 60px;
+    text-align: center;
+    position : relative;
+    margin : 0;
+    border-bottom : 1px solid rgb(204, 204, 204);
+}
+
+.baseinfo-table {
+    width : 100%;
+}
+
+.baseinfo-table tr+tr{
+    border-top: 1px solid rgb(238, 238, 238);
+}
+
+
+.table-head {
+    width : 150px;
+    font-size: 15px;
+    font-weight : 500;
+    color : rgb(34, 34, 34);
+    background : rgb(249, 249, 249);
+    padding : 0;
+}
+.td-texts {
+    display : inline-block;
+    margin : 20px;
+}
+
+.td-text{
+    width : 30px;
+    display : inline-block;
+    text-align: center;
+    color: rgb(34, 34, 34);
+    font-size: 15px;
+    line-height: 46px;
+}
+
+.baseinfo-table select {
+    width : 168px;
+    height : 46px;
+    margin-left : 20px;
+    margin-top : 10px;
+    margin-bottom : 10px;
+    color : rgb(68, 68, 68);
+    box-sizing: border-box;
+    border : 1px solid rgb(208, 210, 214);
+    outline : none;
+}
+
+.baseinfo-table input {
+    width : 110px;
+    height : 46px;
+    border : 1px solid rgb(208, 210, 214);
+}
+
+.provision-area {
+    width : 450px;
+    height : 46px;
+}
+
+.exclusive-area{
+    width : 450px;
+    height : 46px;
+}
+
+.building-floor p{
+    float : left;
+    margin : 20px;
+}
+
+.floors p{
+    float : left;
+    margin : 20px;
+}
+
+.heating {
+    height : 46px;
+    box-sizing: border-box;
+}
+
+.moving-date {
+    height : 46px;
+}
+
+.moving-date button{
+    width : 130px;
+    height : 46px;
+    border : 1px solid rgb(208, 210, 214);
+    margin-left : 20px;
+    margin-top : 10px;
+    margin-bottom : 10px;
+    background : rgb(255, 255, 255);
+    border-radius: 5px;
+    color : rgb(34, 34, 34);
+    cursor : pointer;
+}
+
+/* ==============================.additional============================== */
+
+#main .additional{ 
+    width : 100%;
+    /* overflow: hidden; */
+    border : 1px solid rgb(204, 204, 204);
+    border-radius: 4px;
+    margin-bottom : 50px;
+    box-shadow : rgba(0, 0, 0, 0.05) 0px 1px 5px 0px;
+}
+
+.additional>h1{
+    height : 60px;
+    width : 100%;
+    color : rgb(34, 34, 34);
+    font-size : 18px;
+    line-height : 60px;
+    text-align: center;
+    position : relative;
+    margin : 0;
+    border-bottom : 1px solid rgb(204, 204, 204);
+}
+
+.additional-table{
+    width : 100%;
+}
+
+.additional-table tr+tr{
+    border-top: 1px solid rgb(238, 238, 238);
+}
+
+.additional-table input[type="text"] {
+    border : 1px solid rgb(208, 210, 214);
+}
+
+.management-fee{
+    display : inline-flex;
+}
+
+.management-fee input[type="text"]{
+    /* float : left; */
+    width : 110px;
+    height: 46px;
+    margin : 22px;
+}
+
+.management-fee .fee-text {
+    display : inline-block;
+    margin : auto;
+}
+
+.checkwrap{
+    display : flex;
+    margin-left: 17px;
+}
+
+ .checkwrap .fee-check{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     cursor : pointer;
+     margin-left: 7px; 
+ }
+
+.management-notice{
+    float : right;
+    /* display: inline-block; */
+}
+
+.management-option{
+    display : flex;
+}
+
+.option-text{
+    margin : 10px;
+    text-align: center;
+    color : rgb(34, 34, 34);
+}
+
+/* --------------------checkbox-btn------------------ */
+.checkbox-btn{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    margin : 10px;
+    position : relative;
+    cursor : pointer;
+    user-select: none;
+}
+
+.checkbox-btn input[type="checkbox"]{
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.checkbox-btn >p{
+    min-width: 70px;
+    height: 36px;
+    line-height: 34px;
+    padding: 0px 15px;
+    /* position : absolute; */
+}
+
+.checkbox-btn >p{
+    color: rgb(102, 102, 102);
+    font-size: 14px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 0px 15px;
+    border-radius: 3px;
+    border: 1px solid rgb(224, 224, 224);
+}
+
+.checkbox-btn input[type="checkbox"]:checked+p{
+    color: rgb(255, 255, 255);
+    background-color: #457b9d;
+    border-color : #457b9d;
+    border-radius : 3px;
+}
+
+/* --------------------checkbox-btn------------------ */
+
+/* ==================parking================== */
+#main .parking{
+    display : flex;
+}
+
+.parking-fee{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parking-fee input[type="text"]{
+    width : 110px;
+    height: 46px;
+    margin : 22px;
+}
+/* --------------------radio-btn------------------ */
+.radio-btn{
+    display : flex;
+    position : relative;
+    margin : 10px;
+}
+
+.radio-btn input[type="radio"]{
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.radio-btn p{
+    min-width: 82px;
+    height: 46px;
+    color: rgb(102, 102, 102);
+    font-size: 14px;
+    line-height: 44px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 0px 15px;
+    border-radius: 3px;
+    border : 1px solid rgb(224, 224, 224);
+}
+
+.radio-btn input[type="radio"]:checked+p{
+    color: rgb(255, 255, 255);
+    background-color: #7584ad;
+    border-color: #7584ad;
+}
+/* --------------------radio-btn------------------ */
+
+/* ====================pets============================== */
+#main .pets{
+    display : flex;
+}
+/* =====================elevator============================= */
+#main .elevator {
+    display : flex;
+}
+/* =======================veranda============================== */
+#main .veranda{
+    display : flex;
+}
+/* =========================built-in============================ */
+#main .built-in{
+    display : flex;
+}
+/* ==========================option====================== */
+.checkbox-wrap{
+    display : flex;
+}
+/* ============================loan=========================== */
+#main .loan{
+    display : flex;
+}
+
+/* ==========================detail-description===================== */
+#main .detail-description{ 
+    width : 100%;
+    /* overflow: hidden; */
+    border : 1px solid rgb(204, 204, 204);
+    border-radius: 4px;
+    margin-bottom : 50px;
+    box-shadow : rgba(0, 0, 0, 0.05) 0px 1px 5px 0px;
+}
+
+.detail-description>h1{
+    height : 60px;
+    width : 100%;
+    color : rgb(34, 34, 34);
+    font-size : 18px;
+    line-height : 60px;
+    text-align: center;
+    position : relative;
+    margin : 0;
+    border-bottom : 1px solid rgb(204, 204, 204);
+}
+
+.detail-table{
+    width : 100%;
+}
+
+.detail-table tr+tr{
+    border-top: 1px solid rgb(238, 238, 238);
+}
+
+.detail-table .detail-title{
+    padding : 10px;
+    margin-top : 10px;
+    width: 100%;
+    height: 46px;
+    color: rgb(68, 68, 68);
+    font-size: 15px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(208, 210, 214);
+    border-radius: 0px;
+    outline: none;
+}
+
+.detail-explanation .detail-textarea{
+    padding : 10px;
+    margin-top : 10px;
+    width : 100%;
+    color: rgb(68, 68, 68);
+    font-size: 15px;
+    background-color: rgb(255, 255, 255);
+    resize: none;
+    height: 230px;
+    border: 1px solid rgb(208, 210, 214);
+    outline: none;
+}
+
+.private-textarea{
+    padding : 10px;
+    margin-top : 10px;
+    color: rgb(68, 68, 68);
+    font-size: 15px;
+    background-color: rgb(255, 255, 255);
+    resize: none;
+    width: 100%;
+    height: 100px;
+    border: 1px solid rgb(208, 210, 214);
+    outline: none;
+}
+
+/* ===========================photo======================== */
+#main .photo{
+    width : 100%;
+    /* overflow: hidden; */
+    border : 1px solid rgb(204, 204, 204);
+    border-radius: 4px;
+    margin-bottom : 50px;
+    box-shadow : rgba(0, 0, 0, 0.05) 0px 1px 5px 0px;
+}
+
+.photo>h1{
+    height : 60px;
+    width : 100%;
+    color : rgb(34, 34, 34);
+    font-size : 18px;
+    line-height : 60px;
+    text-align: center;
+    position : relative;
+    margin : 0;
+    border-bottom : 1px solid rgb(204, 204, 204);
+}
+
+.photo-container{
+    width : 100%;
+    padding : 20px;
+}
+
+.photo-btns{
+    width : 260px;
+    height : 46px;
+    border : 1px solid rgb(224, 224, 224);
+    border-radius : 3px;
+    display : flex;
+}
+
+.photo-btns button{
+    width: 50%;
+    height: 100%;
+    color: rgb(102, 102, 102);
+    font-size: 14px;
+    background-color: rgb(255, 255, 255);
+    border-width: 0px;
+}
+
+.photo-btns button:nth-of-type(1) {
+    background : #457b9d;
+    color : #fff;
+}
+
+.photo-notice{
+    width : 100%;
+    padding : 20px 30px;
+    margin : 15px 0;
+    border : 1px solid rgb(224, 224, 244);
+}
+
+.photo-notice p{
+    height: 16px;
+    color: rgb(102, 102, 102);
+    font-size: 15px;
+}
+
+.photo-box{
+    width: 100%;
+    min-height: 350px;
+    background-color: rgb(244, 244, 244);
+    padding: 9px;
+}
+
+.photo-registration{
+    padding-top: 75px;
+    text-align: center;
+}
+
+.photo-registration p{
+    height: 16px;
+    color: rgb(102, 102, 102);
+    font-size: 15px;
+}
+
+.photo-file{
+    width : 100%;
+    position : relative;
+    text-align: center;
+}
+
+.photo-file .upload-btn{
+    position : relative;
+    /* z-index: 1; */
+    height: 40px;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #457b9d;
+    padding: 0px 20px;
+    border-width: 0px;
+    border-radius: 3px;
+}
+
+.html5{
+    position: absolute;
+    top: 0px;
+    left: 499px;
+    width: 124px;
+    height: 40px;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.html5 input[type="file"] {
+    cursor:pointer;
+    font-size: 999px;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.agree-wrap{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 150px;
+    text-align: center;
+}
+
+.agree-wrap button{
+    width: 160px;
+    height: 50px;
+    margin-top: 30px;
+    margin-right : 10px;
+    font-size: 15px;
+    cursor : pointer;
+}
+
+.agree-wrap button:nth-of-type(1) {
+    color: rgb(34, 34, 34);
+    background-color: rgb(255, 255, 255);
+    border : 1px solid rgb(204, 204, 204);
+}
+
+.agree-wrap button:nth-of-type(2) {
+    color: rgb(255, 255, 255);
+    background-color: #1d3557;
+    border : 1px solid #1d3557;
+}
+

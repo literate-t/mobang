@@ -21,19 +21,22 @@ import com.mobang.web.entity.Position;
 public class MobangController {
 	
 	@GetMapping("home")
-	public String index(HttpServletResponse response) {
-		response.setCharacterEncoding("UTF-8");
-		response.setContentType("text/html; charset=utf-8");
+	public String index() {
 		return "mobang.home";
 	}
 	
+	@GetMapping("roomadd")
+	public String roomadd() {
+		return "mobang.roomadd";
+	}
+	
 	@GetMapping("login")
-	public String login(HttpServletResponse response) {
+	public String login() {
 		return "inc/login/login";
 	}
 	
 	@GetMapping("signup")
-	public String signup(HttpServletResponse response) {
+	public String signup() {
 		return "inc/login/signup";
 	}
 	
