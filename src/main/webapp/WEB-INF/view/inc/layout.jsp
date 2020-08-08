@@ -8,11 +8,12 @@
 <meta charset="UTF-8">
 	<!-- <title><tiles:insertAttribute name="title" ignore="true"></tiles:insertAttribute></title> -->
 	<title>부동산 정보</title>
-    <link href="/css/reset.css" rel="stylesheet" type="text/css">
+<!-- <link href="/css/reset.css" rel="stylesheet" type="text/css"> -->
     <link href="/css/style.css" rel="stylesheet" type="text/css">
     <link href="/css/component.css" rel="stylesheet" type="text/css">
     <link href="/css/layout.css" rel="stylesheet" type="text/css">
     <link href="/css/header.css" rel ="stylesheet" type="text/css">
+    <link href="/css/room.css" rel="stylesheet" type="text/css">
     <link href="/css/home.css" rel="stylesheet" type="text/css">
 </head>
 <body>

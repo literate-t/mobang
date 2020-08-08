@@ -23,7 +23,7 @@
 			<div class="right-menu-detail">
 				<a class="" href="search">방찾기</a>
 				<a class="" href="">관심목록</a> 
-				<a class="" href="room.html">방내놓기</a> <a
+				<a class="" href="roomadd">방내놓기</a> <a
 					class="" href="">알림 <i class="fa fa-bell-o"></i>
 				</a>
 			</div>
