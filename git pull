@@ -1,0 +1,23 @@
+[33mcommit 4f5678e18e47e1b1963702378f8a939895e357fb[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: qufdl1129 <b1129yee@naver.com>
+Date:   Fri Aug 7 20:35:26 2020 +0900
+
+    header수정 (home/component 헤더 스타일 삭제) 로그인화면 수정
+
+[33mcommit 8ade9aa17a65d109f7d112a5a148049d26a76c5d[m
+Author: T <literate_t@naver.com>
+Date:   Fri Aug 7 16:47:49 2020 +0900
+
+    merge sources which are back and front
+
+[33mcommit 4624d222c9fd6e887d8915ffa123584d2cf647a9[m
+Author: T <literate_t@naver.com>
+Date:   Tue Aug 4 18:09:30 2020 +0900
+
+    README.md added
+
+[33mcommit 5d859b7672aaab8ff35c89fbf775f3f763c9b0ec[m
+Author: T <literate_t@naver.com>
+Date:   Tue Aug 4 12:41:51 2020 +0900
+
+    first commit

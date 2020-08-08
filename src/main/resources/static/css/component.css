@@ -82,8 +82,189 @@
  */
 /* main------------------------- */
 #filter {
-        
+	margin : 0;
 }
+.bar{
+    width : 100%;
+    margin : 0;
+    position : absolute;
+    display : flex;
+    border-top : 1px solid rgb(208, 210, 214);
+    border-bottom : 1px solid rgb(208, 210, 214);
+}
+
+.searchbar{
+    width : 250px;
+    height : 46px;
+    position : relative;
+}
+
+.searchbar .input-sc{
+    width: 100%;
+    height : 100%;
+    padding-left : 10px;
+    outline : none;
+    border : 0;
+    border-right : 1px solid rgb(208, 210, 214);  
+}
+
+/* .input-sc:focus{
+    border : 0;
+    box-shadow: 0 0 4px #314570;
+} */
+
+.input-sc:focus+.fa{
+    color : #314570;
+}
+
+.searchbar>i{
+    color : rgb(208, 210, 214);
+    position : absolute;
+    top : 50%;
+    right : 0;
+    margin-right : 10px;
+    transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 15px;
+}
+
+.filter-wrap{
+    position : absolute;
+    left : 251px;
+    top : 50%;
+    display : flex;
+    transform: translateY(-50%);
+}
+
+.housing-type{
+    height: 36px;
+    margin-left : 10px;
+    position : relative;
+    cursor : pointer;
+}
+
+
+.housing-btn{
+    height: 100%;
+    font-size: 14px;
+    color: rgb(34, 34, 34);
+    font-weight: 500;
+    line-height: 34px;
+    display : inline-block;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    padding: 0 30px 0 10px;
+    border : 1px solid rgb(224, 224, 224);
+    border-radius: 3px;
+}
+
+.housing-btn>span{
+    display : inline-block;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.housing-btn .fa{
+    position : absolute;
+    top : 50%;
+    right : 0;
+    transform: translate(-50%, -50%);
+    margin-right : 5px;
+    color: rgb(34, 34, 34);
+}
+
+.filterbox-housing{
+    /* display : none; */
+    background : rgb(255, 255, 255);
+    position : absolute;
+    width : 300px;
+    top: 38px;
+    z-index: 101;
+    padding: 27px 30px 0px;
+    border : 1px solid rgb(187, 187, 187);
+    border-radius: 3px;
+}
+
+.filterbox-housing>h1{
+    margin-bottom: 27px;
+    color: rgb(34, 34, 34);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+}
+
+.filterbox-housing h1>p{
+    margin-top: 3px;
+    color: rgb(170, 170, 170);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+.filterbox-housing>ul{
+    padding : 0;
+}
+
+.filterbox-housing .check-label{
+    cursor : pointer;
+}
+
+.price-range{
+    height: 36px;
+    margin-left : 10px;
+    position : relative;
+    cursor : pointer;
+}
+
+
+.price-btn{
+    height: 100%;
+    font-size: 14px;
+    color: rgb(34, 34, 34);
+    font-weight: 500;
+    line-height: 34px;
+    display : inline-block;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    padding: 0 30px 0 10px;
+    border : 1px solid rgb(224, 224, 224);
+    border-radius: 3px;
+}
+
+.price-btn>span{
+    display : inline-block;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.price-btn .fa{
+    position : absolute;
+    top : 50%;
+    right : 0;
+    transform: translate(-50%, -50%);
+    margin-right : 5px;
+    color: rgb(34, 34, 34);
+}
+
+.filterbox-price{
+    background : rgb(255, 255, 255);
+    position : absolute;
+    width : 300px;
+    top: 38px;
+    z-index: 101;
+    padding: 27px 30px 0px;
+    border : 1px solid rgb(187, 187, 187);
+    border-radius: 3px;
+}
+
+.filterbox-price h1{
+    margin-bottom: 27px;
+    color: rgb(34, 34, 34);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+}
+
 
 #property-list {
     border: 1px solid gray;
