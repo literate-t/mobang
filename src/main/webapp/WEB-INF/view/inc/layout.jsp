@@ -16,6 +16,7 @@
     <link href="/css/room.css" rel="stylesheet" type="text/css">
     <link href="/css/home.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
 	<!-- header -->
 	<tiles:insertAttribute name="header" />
@@ -32,4 +33,5 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script type="text/javascript" src="/js/map.js" charset="UTF-8"></script>
     <script type="text/javascript" src="/js/home.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="/js/filter.js" charset="UTF-8"></script>
 </html>

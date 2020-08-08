@@ -4,22 +4,23 @@
 }
 
 #filter {
-    background:gray;
     height:70px;
 }
-body {
+/* body {
    overflow: hidden;
-}
+} */
     #content {        
         display:flex;    
+        overflow : hidden;
     }
 
 #header {
-    width : 1180px;
+    /* width : 1180px; */
     height: 70px;
     display : flex;
     justify-content: center;
     margin : auto;
+    padding : 0 20px;
 }
 
 /* .header-box {

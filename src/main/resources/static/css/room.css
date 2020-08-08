@@ -4,9 +4,9 @@
 @import url('http://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 
-/* ===========================================header========================================== */
+/* /* ===========================================header========================================== */
 
-.header-box{
+/* .header-box{
     background-color: rgb(255, 255, 255);
     z-index : 21;
     border-bottom: 1px solid rgb(235, 235, 235);
@@ -39,7 +39,7 @@
 .left-menu{
     display : inline-block;
     margin-left: 20px;
-    /* width : 250px; */
+    width : 250px;
 }
 
 .left-menu a{
@@ -82,7 +82,7 @@
 }
 
 .right-menu{
-    /* overflow: hidden; */
+    overflow: hidden;
     float : right;
 }
 
@@ -203,14 +203,12 @@
 
 .member .d-none{
     display : none;
-}
+} */ */
 
 /* ======================================main=============================== */
-/* checkbox-btn이랑 radio-btn 스타일 additional에 있음 */
 
 #main .content-container {
     width : 1180px;
-    /* height : 3800px; */
     overflow: hidden;
     margin : auto;
 }
@@ -437,7 +435,7 @@
 }
 
 .detail1::after{
-    content: "동";
+    content: "�룞";
 }
 
 .detail1::after{
@@ -460,7 +458,7 @@
 }
 
 .detail2::after{
-    content: "호";
+    content: "�샇";
 }
 
 .detail2::after{
