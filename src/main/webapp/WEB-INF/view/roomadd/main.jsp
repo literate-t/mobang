@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+	<link href="/css/room.css" rel="stylesheet" type="text/css">
+	
+	
 <main id="main">
 	<div class="content-container">
 		<div class="main-header">
@@ -140,9 +143,9 @@
 					<tr>
 						<th class="table-head" rowspan="2">건물크기</th>
 						<td class="provision-area">
-							<p class="td-texts">공급면적</p> <input type="text">
-							<p class="td-text">평</p> <input type="text">
-							<p class="td-text">㎡</p>
+							<p class="area-type">공급면적</p> <input type="text">
+							<p class="area-unit">평</p> <input type="text">
+							<p class="area-unit">㎡</p>
 						</td>
 						<th class="table-head" rowspan="2">건물층수</th>
 						<td class="building-floor">
@@ -160,9 +163,9 @@
 					</tr>
 					<tr>
 						<td class="exclusive-area">
-							<p class="td-texts">전용면적</p> <input type="text">
-							<p class="td-text">평</p> <input type="text">
-							<p class="td-text">㎡</p>
+							<p class="area-type">전용면적</p> <input type="text">
+							<p class="area-unit">평</p> <input type="text">
+							<p class="area-unit">㎡</p>
 						</td>
 						<td class="floors">
 							<p>해당층수</p> <select>

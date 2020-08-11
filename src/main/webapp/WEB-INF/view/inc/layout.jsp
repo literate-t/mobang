@@ -8,12 +8,11 @@
 <meta charset="UTF-8">
 	<!-- <title><tiles:insertAttribute name="title" ignore="true"></tiles:insertAttribute></title> -->
 	<title>부동산 정보</title>
-<!-- <link href="/css/reset.css" rel="stylesheet" type="text/css"> -->
     <link href="/css/style.css" rel="stylesheet" type="text/css">
-    <link href="/css/component.css" rel="stylesheet" type="text/css">
+    <!-- <link href="/css/component.css" rel="stylesheet" type="text/css"> -->
     <link href="/css/layout.css" rel="stylesheet" type="text/css">
     <link href="/css/header.css" rel ="stylesheet" type="text/css">
-    <link href="/css/room.css" rel="stylesheet" type="text/css">
+    <!-- <link href="/css/room.css" rel="stylesheet" type="text/css"> -->
     <link href="/css/home.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -33,5 +32,5 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script type="text/javascript" src="/js/map.js" charset="UTF-8"></script>
     <script type="text/javascript" src="/js/home.js" charset="UTF-8"></script>
-    <script type="text/javascript" src="/js/filter.js" charset="UTF-8"></script>
+    <!-- <script type="text/javascript" src="/js/filter.js" charset="UTF-8"></script> -->
 </html>

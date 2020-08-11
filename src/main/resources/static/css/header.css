@@ -5,7 +5,7 @@
 
 .header-box{
     background-color: rgb(255, 255, 255);
-    border-bottom: 1px solid rgb(235, 235, 235);
+    /* border-bottom: 1px solid rgb(235, 235, 235); */
     display : flex;
     justify-content: space-between;
     align-items: center;

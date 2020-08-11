@@ -3,6 +3,7 @@
 body{
 	margin : 0;
 	padding : 0;
+	overflow : hidden;
 }
 
 #filter {
@@ -19,25 +20,24 @@ body{
 }
 
 .searchbar{
-    width : 250px;
-    overflow : hidden;
-    position : relative;
+  	width: 251px;
+    overflow: hidden;
+    position: relative;
+    border-right: 1px solid rgb(208, 210, 214);
 }
 
 .searchbar .input-sc{
     width: 100%;
-    height : 70px;
-    padding-left : 10px;
-    outline : none;
-    box-sizing : border-box;
-    border : 0;
-    border-right : 1px solid rgb(208, 210, 214);  
+    height: 60px;
+    padding: 10px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    outline: none;
+    box-sizing: border-box;
+    border: 0;
 }
-
-/* .input-sc:focus{
-    border : 0;
-    box-shadow: 0 0 4px #314570;
-} */
 
 .input-sc:focus+.fa{
     color : #314570;
@@ -68,7 +68,7 @@ body{
     position : relative;
     cursor : pointer;
 }
-
+ 
 
 .housing-btn{
     height: 100%;
@@ -100,7 +100,6 @@ body{
 }
 
 .filterbox-housing{
-    /* display : none; */
     background : rgb(255, 255, 255);
     position : absolute;
     width : 300px;
@@ -127,11 +126,11 @@ body{
     line-height: 19px;
 }
 
-.filterbox-housing>ul{
+.filterbox-housing .filter-list{
     padding : 0;
 }
 
-.filterbox-housing .check-label{
+.check-label{
     cursor : pointer;
 }
 
@@ -191,7 +190,7 @@ body{
     line-height: 33px;
 }
 
-
+/* ====================================================== */
 #property-list {
     /* border: 1px solid gray; */
     width:630px;                
@@ -205,7 +204,7 @@ body{
         padding-left : 0;
     }
         #property-list ul>li>div {
-            border: 1px solid gray;
+            border: 1px solid rgb(208, 210, 214);
             width:280px;
             height:250px;
             --height:auto;
@@ -216,4 +215,5 @@ body{
 
 #property-map {
     flex: 0 0 auto;
+    z-index : -9999;
 }

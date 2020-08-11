@@ -4,208 +4,14 @@
 @import url('http://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 
-/* /* ===========================================header========================================== */
-
-/* .header-box{
-    background-color: rgb(255, 255, 255);
-    z-index : 21;
-    border-bottom: 1px solid rgb(235, 235, 235);
-    display : flex;
-    justify-content: space-between;
-    align-items: center;
-    width : 1180px;
-    right : 0;
-}
-
-#header .logo{
-    float: left;
-    width : 80px;
-    height : 70px;
-    bottom : 15px;
-    position : relative;
-    
-}
-
-.logo>svg{
-    background: #314570;
-    width : 100%;
-    padding-left : 17px;
-    padding-top : 4px;
-    position :absolute;
-    top : 47%;
-    transform : translateY(0px, -50%);
-}
-
-.left-menu{
-    display : inline-block;
-    margin-left: 20px;
-    width : 250px;
-}
-
-.left-menu a{
-    position : relative;
-    font-size: 13px;
-    color : rgb(136, 136, 136);
-}
-
-.left-menu a:hover{
-    color : #314570;
-    opacity : 80%;
-
-}
-
-.left-menu a:before{
-    position : absolute;
-    content : '';
-    background : #7584ad;
-    border-radius: 20px;
-    opacity : 80%;
-    height : 2px;
-    width : 0;
-    bottom : -4px;
-    transition : 0.5s;
-    left : 50%;
-    transform: translateX(-50%);
-}
-
-.left-menu a:hover:before{
-    width : 100%;
-}
-
-.left-menu>div{
-    display : inline-block;
-    width: 1px;
-    height: 15px;
-    vertical-align: middle;
-    background : rgb(221, 221, 221);
-    margin : 0px 12px;
-}
-
-.right-menu{
-    overflow: hidden;
-    float : right;
-}
-
-.right-menu-detail{
-    display : inline-flex;
-    justify-content: space-evenly;
-    font-size: 17px;
-    line-height: 27px;
-    box-sizing: border-box;
-}
-
-.right-menu-detail a{
-    margin-right : 16px;
-    color : rgb(34, 34, 34);
-    font-size: 13px;
-    position :relative;
-    display : inline-block;
-}
-
-.right-menu-detail a:hover{
-    color : #314570;
-    opacity : 90%;
-}
-
-.right-menu-detail a:before{
-    position : absolute;
-    content : '';
-    background : #7584ad;
-    border-radius: 20px;
-    opacity : 80%;
-    height : 2px;
-    width : 0;
-    bottom : 0;
-    transition : 0.5s;
-    left : 50%;
-    transform: translateX(-50%);
-}
-
-.right-menu-detail a:hover:before{
-    width : 100%;
-}
-
-
-.member {
-    margin-right : 30px;
-    display : inline-flex;
-    box-sizing: border-box;
-    justify-content: center;
-    align-items: center;
-    position : relative;
-}
-
-.member button{
-    width : 70px;
-    height : 50px;
-    border : 0;
-    border-radius: 50%;
-    background : transparent;
-    position: relative;
-}
-
-.member .fa{
-    color : #314570;
-}
-
-.member span{
-    color : #314570;
-}
-
-.member ul{
-    display : inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position : absolute;
-    top : 52px;
-    right : 0;
-    width : 240px;
-    padding : 0;
-    margin : 0;
-    border : 1px solid rgb(224, 224, 244);
-}
-
-.member li{
-    height : 52px;
-    width : 100%;
-    display : inline-flex;
-    align-items: center;
-    background : rgb(255, 255, 255);
-}
-
-.member li:nth-of-type(1){
-    border-bottom : 1px solid rgb(224, 224, 244);
-}
-
-.member a{
-    font-size: 13px;
-    padding-left : 20px;
-    color : rgb(136, 136, 136);
-}
-
-.member a:hover{
-    color : #314570;
-}
-
-.member ul:before{
-    content : '';
-    width : 12px;
-    height : 12px;
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-    top: -7px;
-    right: 30px;
-    transform: rotate(45deg);
-    border-top: 1px solid rgb(224, 224, 244);
-    border-left: 1px solid rgb(224, 224, 244);
-}
-
-.member .d-none{
-    display : none;
-} */ */
 
 /* ======================================main=============================== */
+body{
+	margin : 0;
+	padding :0;
+	overflow-x : hidden;
+}
+
 
 #main .content-container {
     width : 1180px;
@@ -435,7 +241,7 @@
 }
 
 .detail1::after{
-    content: "�룞";
+    content: "동";
 }
 
 .detail1::after{
@@ -458,7 +264,7 @@
 }
 
 .detail2::after{
-    content: "�샇";
+    content: "호";
 }
 
 .detail2::after{
@@ -644,12 +450,12 @@
     background : rgb(249, 249, 249);
     padding : 0;
 }
-.td-texts {
+.area-type {
     display : inline-block;
     margin : 20px;
 }
 
-.td-text{
+.area-unit{
     width : 30px;
     display : inline-block;
     text-align: center;
