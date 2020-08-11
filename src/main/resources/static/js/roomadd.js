@@ -6,9 +6,11 @@ $(document).ready(function(){
     let p1Node = $(document.createElement("p"));
     p1Node.append("월세");
     let input1Node = $(document.createElement("input"));
+    input1Node.attr('placeholder','보증금');
     let p2Node = $(document.createElement("p"));
     p2Node.append("/");
     let input2Node = $(document.createElement("input"));
+    input2Node.attr('placeholder','월세');
     let p3Node = $(document.createElement("p"));
     p3Node.append("만원");
     let btnNode = $(document.createElement("button"));
@@ -41,6 +43,7 @@ $(document).ready(function(){
     let p1Node = $(document.createElement("p"));
     p1Node.append("전세");
     let input1Node = $(document.createElement("input"));
+    input1Node.attr('placeholder','전세');
     let p2Node = $(document.createElement("p"));
     p2Node.append("만원");
     let btnNode = $(document.createElement("button"));

@@ -89,10 +89,10 @@ input {
 }
 
 
-input[type="textarea"]:focus{
+/* input[type="textarea"]:focus{
     border : 0;
     box-shadow: 0 0 10px #12295850;
-}
+} */
 
 input[type="checkbox"]{
     cursor : pointer;
