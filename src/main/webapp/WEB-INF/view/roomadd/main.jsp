@@ -1,8 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-	<link href="/css/room.css" rel="stylesheet" type="text/css">
-	
-	
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link href="/css/room.css" rel="stylesheet" type="text/css">	
+</head>
+
+<body>
 <main id="main">
 	<div class="content-container">
 		<div class="main-header">
@@ -115,21 +120,12 @@
 					<tr>
 						<th class="deal-title" rowspan="2">거래종류</th>
 						<td class="deal-wrap">
-							<button class="dealtype-btn">월세</button>
-							<button class="dealtype-btn">전세</button> <!-- <div>
-                                <label>
-                                    <input type = "checkbox">
-                                    <span></span>
-                                    <span></span>
-                                </label>
-                            </div> -->
+							<button class = "dealbtn1">월세</button>
+                            <button class = "dealbtn2">전세</button>
 						</td>
 					</tr>
 					<tr>
-						<td>
-							<div>
-								<p>동해물과 백두산이 마르고 닳도록</p>
-							</div>
+						<td class = "info-area">
 						</td>
 					</tr>
 				</tbody>
@@ -193,11 +189,11 @@
 					</tr>
 					<tr>
 						<th class="table-head"">입주가능일</th>
-						<td class="moving-date" colspan="3">
-							<button>즉시입주</button>
-							<button>날짜협의</button>
-							<button>날짜선택</button>
-						</td>
+                        <td class = "moving-date" colspan="3">
+                            <button style = "background : rgb(255, 255, 255)">즉시입주</button>
+                            <button style = "background : rgb(255, 255, 255)">날짜협의</button>
+                            <button style = "background : rgb(255, 255, 255)">날짜선택</button>
+                        </td>
 					</tr>
 				</tbody>
 			</table>
@@ -411,10 +407,10 @@
 		<div class="photo">
 			<h1>사진 등록</h1>
 			<div class="photo-container">
-				<div class="photo-btns">
+				<!-- <div class="photo-btns">
 					<button class="abc">일반사진</button>
 					<button class="def">360˚</button>
-				</div>
+				</div> -->
 				<div class="photo-notice">
 					<p>-사진은 가로로 찍은 사진을 권장</p>
 					<p>-사진 용량은 한 장당 10mb까지 등록 가능</p>
@@ -445,3 +441,7 @@
 		</div>
 	</div>
 </main>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script type="text/javascript" src="/js/roomadd.js" charset="UTF-8"></script>
+</body>
+</html>

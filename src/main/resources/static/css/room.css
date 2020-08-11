@@ -397,7 +397,7 @@ body{
     padding: 12px 20px;
 }
 
-.deal-wrap button{
+.dealbtn1{
     width : 130px;
     height : 46px;
     margin-left : 20px;
@@ -408,6 +408,107 @@ body{
     border-radius: 5px;
     color : rgb(34, 34, 34);
     cursor : pointer;
+}
+
+.dealbtn2{
+    width : 130px;
+    height : 46px;
+    margin-left : 20px;
+    margin-top : 10px;
+    margin-bottom : 10px;
+    border : 1px solid rgb(208, 210, 214);
+    background : rgb(255, 255, 255);
+    border-radius: 5px;
+    color : rgb(34, 34, 34);
+    cursor : pointer;
+    transition : 0.2s;
+}
+
+/* .btn1-clicked{
+    background-color : #314570;
+    color : #fff;
+    border : 0;
+} */
+
+.clicked{
+    background-color : #314570;
+    color : #fff;
+    border : 0;
+}
+
+.dealinfo-m{
+    display : flex;
+    width : 100%;
+    /* background : red; */
+}
+
+.dealinfo-m>button{
+    display : inline-block;
+    background : 0;
+    outline : none;
+    border : 0;
+}
+
+.dealinfo-m p:nth-of-type(1){
+    background : #314570;
+    color : #fff;
+    border-radius: 5px;
+    font-size: 13px;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    padding : 2px;
+    margin-left : 10px;
+}
+
+.dealinfo-m p:nth-of-type(2){
+    width : 10px;
+    margin-left: 10px;
+}
+
+.dealinfo-m p:nth-of-type(3){
+    margin-left : 10px;
+}
+
+.dealinfo-m>input{
+    border : 1px solid rgb(208, 210, 214);
+    width : 110px;;
+    height: 46px;
+    margin-left : 10px;
+}
+
+.dealinfo-y{
+    display : flex;
+}
+
+.dealinfo-y>p:nth-of-type(1){
+    background : #314570;
+    color : #fff;
+    border-radius: 5px;
+    font-size: 13px;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    padding : 2px;
+    margin-left : 10px;
+}
+
+.dealinfo-y p:nth-of-type(2){
+    margin-left : 10px;
+}
+
+.dealinfo-y>input{
+    border : 1px solid rgb(208, 210, 214);
+    width : 110px;;
+    height: 46px;
+    margin-left : 10px;
+}
+
+.dealinfo-y>button{
+    display : inline-block;
+    background : 0;
+    outline : none;
+    border : 0;
 }
 
 /* ===============================baseinfo============================== */
@@ -518,7 +619,6 @@ body{
     margin-left : 20px;
     margin-top : 10px;
     margin-bottom : 10px;
-    background : rgb(255, 255, 255);
     border-radius: 5px;
     color : rgb(34, 34, 34);
     cursor : pointer;
