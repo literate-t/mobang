@@ -79,5 +79,12 @@ $(document).ready(function(){
         $(this).css({"color":"#fff"});
         $(this).addClass('clicked');
     });
+
+    $(document).on('click', '.submit', function(){
+        let dataArray = [];
+        $('.roomtype-table tr').each(function(){
+
+        });
+    });
 });
 

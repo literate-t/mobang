@@ -30,10 +30,10 @@
 									name="room_type" checked>
 									<p>원룸</p>
 								</label> <label class="radio-btn"> <input type="radio"
-									name="room_type" checked>
+									name="room_type">
 									<p>투룸</p>
 								</label> <label class="radio-btn"> <input type="radio"
-									name="room_type" checked>
+									name="room_type">
 									<p>쓰리룸</p>
 								</label>
 							</div>
@@ -47,10 +47,10 @@
 									name="building_type" checked>
 									<p>단독주택</p>
 								</label> <label class="radio-btn"> <input type="radio"
-									name="building_type" checked>
+									name="building_type">
 									<p>다가구주택</p>
 								</label> <label class="radio-btn"> <input type="radio"
-									name="building_type" checked>
+									name="building_type">
 									<p>빌라/연립/다세대</p>
 								</label>
 							</div>
@@ -213,7 +213,7 @@
 									name="maintenance-option" value=checked>
 									<p>협의가능</p>
 								</label> <label class="fee-check"> <input type="checkbox"
-									name="maintenance" value>
+									name="maintenance">
 									<p>관리비없음</p>
 								</label>
 							</div>
