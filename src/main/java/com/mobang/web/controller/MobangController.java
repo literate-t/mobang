@@ -26,7 +26,9 @@ public class MobangController {
 	}
 	
 	@GetMapping("roomadd")
-	public String roomadd() {
+	public String roomadd(HttpServletResponse response) {
+		response.setCharacterEncoding("UTF-8");
+		response.setContentType("text/html; charset=utf-8");
 		return "mobang.roomadd";
 	}
 	

@@ -437,7 +437,7 @@
 
 		<div class="agree-wrap">
 			<button>취소</button>
-			<button>매물 등록</button>
+			<button class="submit">매물 등록</button>
 		</div>
 	</div>
 </main>
