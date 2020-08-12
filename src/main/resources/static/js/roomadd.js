@@ -82,9 +82,8 @@ $(document).ready(function(){
 
     $(document).on('click', '.submit', function(){
         let dataArray = [];
-        $('.roomtype-table tr').each(function(){
-
-        });
+        let radioVal = $('input[name=room_type]:checked').val();
+        alert(radioVal);
     });
 });
 

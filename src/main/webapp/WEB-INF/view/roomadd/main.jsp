@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
@@ -27,13 +26,13 @@
 						<td class="roomtypetds">
 							<div class="roomtype-btns">
 								<label class="radio-btn"> <input type="radio"
-									name="room_type" checked>
+									name="room_type" value="원룸" checked>
 									<p>원룸</p>
 								</label> <label class="radio-btn"> <input type="radio"
-									name="room_type">
+									name="room_type" value="투룸">
 									<p>투룸</p>
 								</label> <label class="radio-btn"> <input type="radio"
-									name="room_type">
+									name="room_type" value="쓰리룸">
 									<p>쓰리룸</p>
 								</label>
 							</div>
@@ -44,7 +43,7 @@
 						<td class="roomtypetds">
 							<div class="buildingtype-btns">
 								<label class="radio-btn"> <input type="radio"
-									name="building_type" checked>
+									name="building_type" value="단독주택" checked>
 									<p>단독주택</p>
 								</label> <label class="radio-btn"> <input type="radio"
 									name="building_type">
@@ -444,4 +443,3 @@
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script type="text/javascript" src="/js/roomadd.js" charset="UTF-8"></script>
 </body>
-</html>

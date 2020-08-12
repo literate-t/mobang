@@ -99,7 +99,7 @@ function updateList(json, propertyList) {
 		let divNode = $(document.createElement("div"));
 		let aNode = $(document.createElement("a"));
 		aNode.attr('href', '#').attr('target', '_blank');
-		//divNode.append(data.lng);
+		divNode.append(data.lng);
 		divNode.append(aNode);
 		liNode.append(divNode);
 		UlNode.append(liNode);
