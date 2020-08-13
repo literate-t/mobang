@@ -5,8 +5,9 @@ public class Property {
 	private int buildingType;	// 0: 단독주택, 1:다가구주택
 	private String address;		
 	private int dealType;
-	private String monthlyLease;
-	private String depositLease;
+	private String monthlyDeposit;
+	private String monthlyPrice;
+	private String deposit;
 	private double supplyPyeong;
 	private double supplyM2;
 	private int buildingFloor;
@@ -54,17 +55,24 @@ public class Property {
 	public void setDealType(int dealType) {
 		this.dealType = dealType;
 	}
-	public String getMonthlyLease() {
-		return monthlyLease;
+	
+	public String getMonthlyDeposit() {
+		return monthlyDeposit;
 	}
-	public void setMonthlyLease(String monthlyLease) {
-		this.monthlyLease = monthlyLease;
+	public void setMonthlyDeposit(String monthlyDeposit) {
+		this.monthlyDeposit = monthlyDeposit;
 	}
-	public String getDepositLease() {
-		return depositLease;
+	public String getMonthlyPrice() {
+		return monthlyPrice;
 	}
-	public void setDepositLease(String depositLease) {
-		this.depositLease = depositLease;
+	public void setMonthlyPrice(String monthlyPrice) {
+		this.monthlyPrice = monthlyPrice;
+	}
+	public String getDeposit() {
+		return deposit;
+	}
+	public void setDeposit(String deposit) {
+		this.deposit = deposit;
 	}
 	public double getSupplyPyeong() {
 		return supplyPyeong;

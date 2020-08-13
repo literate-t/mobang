@@ -138,14 +138,15 @@
 					<tr>
 						<th class="table-head" rowspan="2">건물크기</th>
 						<td class="provision-area">
-							<p class="area-type">공급면적</p> <input type="text">
-							<p class="area-unit">평</p> <input type="text">
-							<p class="area-unit">㎡</p>
+							<p class="area-type">공급면적</p>
+							<input type="text" name="supply-pyeong"><p class="area-unit">평</p>
+							<input type="text" name="supply-m2"><p class="area-unit">㎡</p>
 						</td>
 						<th class="table-head" rowspan="2">건물층수</th>
 						<td class="building-floor">
-							<p>건물층수</p> <select>
-								<option value>건물층수 선택</option>
+							<p>건물층수</p> 
+							<select name="building-floor">
+								<option>건물층수 선택</option>
 								<option value="1">1층</option>
 								<option value="2">2층</option>
 								<option value="3">3층</option>
@@ -153,41 +154,44 @@
 								<option value="5">5층</option>
 								<option value="6">6층</option>
 								<option value="7">7층</option>
-						</select>
+							</select>
 						</td>
 					</tr>
 					<tr>
 						<td class="exclusive-area">
-							<p class="area-type">전용면적</p> <input type="text">
-							<p class="area-unit">평</p> <input type="text">
-							<p class="area-unit">㎡</p>
+							<p class="area-type">전용면적</p>
+							<input type="text" name="exclusive-pyeong"><p class="area-unit">평</p>
+							<input type="text" name="exclusive-m2"><p class="area-unit">㎡</p>
 						</td>
 						<td class="floors">
-							<p>해당층수</p> <select>
-								<option value>해당층수 선택</option>
-								<option value="1">반지층</option>
-								<option value="2">옥탑</option>
-								<option value="3">1층</option>
-								<option value="4">2층</option>
-								<option value="5">3층</option>
-								<option value="6">4층</option>
-								<option value="7">5층</option>
-								<option value="8">6층</option>
-								<option value="9">7층</option>
-						</select>
+							<p>해당층수</p> 
+							<select name="selected-floor">
+								<option>해당층수 선택</option>
+								<option value="-1">반지층</option>
+								<option value="0">옥탑</option>
+								<option value="1">1층</option>
+								<option value="2">2층</option>
+								<option value="3">3층</option>
+								<option value="4">4층</option>
+								<option value="5">5층</option>
+								<option value="6">6층</option>
+								<option value="7">7층</option>
+							</select>
 						</td>
 					</tr>
 					<tr>
 						<th class="table-head">난방종류</th>
-						<td class="heating" colspan="3"><select>
-								<option value>난방종류 선택</option>
-								<option value="1">중앙난방</option>
-								<option value="2">지역난방</option>
-								<option value="3">개별난방</option>
-						</select></td>
+						<td class="heating" colspan="3">
+							<select id="heat">
+								<option>난방종류 선택</option>
+								<option value="0">중앙난방</option>
+								<option value="1">지역난방</option>
+								<option value="2">개별난방</option>
+							</select>
+						</td>
 					</tr>
 					<tr>
-						<th class="table-head"">입주가능일</th>
+						<th class="table-head">입주가능일</th>
                         <td class = "moving-date" colspan="3">
                             <button style = "background : rgb(255, 255, 255)">즉시입주</button>
                             <button style = "background : rgb(255, 255, 255)">날짜협의</button>
