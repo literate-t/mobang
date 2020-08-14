@@ -5,27 +5,27 @@ public class Property {
 	private int buildingType;	// 0: 단독주택, 1:다가구주택
 	private String address;		
 	private int dealType;
-	private String monthlyDeposit;
+	private String[] monthlyDeposit;
 	private String monthlyPrice;
 	private String deposit;
 	private double supplyPyeong;
 	private double supplyM2;
-	private int buildingFloor;
+	private String buildingFloor;
 	private double exclusivePyeong;
 	private double exclusiveM2;
-	private int selectedFloor;
-	private int heat;
-	private int moveInto;
+	private String selectedFloor;
+	private String heat;
+	private String moveInto;
 	private int maintenanceFee;
 	private String maintenanceItems;
-	private int parkingAvail;
-	private int petAvail;
+	private String parkingAvail;
+	private String petAvail;
 	private int parkingFee;
-	private int elevatorAvail;
-	private int balconyAvail;
-	private int builtInAvail;
+	private String elevatorAvail;
+	private String balconyAvail;
+	private String builtInAvail;
 	private String options;
-	private int loanAvail;
+	private String loanAvail;
 	private String detailTitle;
 	private String detailBody;
 	private String notPublicMemo;
@@ -56,10 +56,10 @@ public class Property {
 		this.dealType = dealType;
 	}
 	
-	public String getMonthlyDeposit() {
+	public String[] getMonthlyDeposit() {
 		return monthlyDeposit;
 	}
-	public void setMonthlyDeposit(String monthlyDeposit) {
+	public void setMonthlyDeposit(String[] monthlyDeposit) {
 		this.monthlyDeposit = monthlyDeposit;
 	}
 	public String getMonthlyPrice() {
@@ -86,10 +86,10 @@ public class Property {
 	public void setSupplyM2(double supplyM2) {
 		this.supplyM2 = supplyM2;
 	}
-	public int getBuildingFloor() {
+	public String getBuildingFloor() {
 		return buildingFloor;
 	}
-	public void setBuildingFloor(int buildingFloor) {
+	public void setBuildingFloor(String buildingFloor) {
 		this.buildingFloor = buildingFloor;
 	}
 	public double getExclusivePyeong() {
@@ -104,22 +104,22 @@ public class Property {
 	public void setExclusiveM2(double exclusiveM2) {
 		this.exclusiveM2 = exclusiveM2;
 	}
-	public int getSelectedFloor() {
+	public String getSelectedFloor() {
 		return selectedFloor;
 	}
-	public void setSelectedFloor(int selectedFloor) {
+	public void setSelectedFloor(String selectedFloor) {
 		this.selectedFloor = selectedFloor;
 	}
-	public int getHeat() {
+	public String getHeat() {
 		return heat;
 	}
-	public void setHeat(int heat) {
+	public void setHeat(String heat) {
 		this.heat = heat;
 	}
-	public int getMoveInto() {
+	public String getMoveInto() {
 		return moveInto;
 	}
-	public void setMoveInto(int moveInto) {
+	public void setMoveInto(String moveInto) {
 		this.moveInto = moveInto;
 	}
 	public int getMaintenanceFee() {
@@ -134,16 +134,16 @@ public class Property {
 	public void setMaintenanceItems(String maintenanceItems) {
 		this.maintenanceItems = maintenanceItems;
 	}
-	public int getParkingAvail() {
+	public String getParkingAvail() {
 		return parkingAvail;
 	}
-	public void setParkingAvail(int parkingAvail) {
+	public void setParkingAvail(String parkingAvail) {
 		this.parkingAvail = parkingAvail;
 	}
-	public int getPetAvail() {
+	public String getPetAvail() {
 		return petAvail;
 	}
-	public void setPetAvail(int petAvail) {
+	public void setPetAvail(String petAvail) {
 		this.petAvail = petAvail;
 	}
 	public int getParkingFee() {
@@ -152,22 +152,22 @@ public class Property {
 	public void setParkingFee(int parkingFee) {
 		this.parkingFee = parkingFee;
 	}
-	public int getElevatorAvail() {
+	public String getElevatorAvail() {
 		return elevatorAvail;
 	}
-	public void setElevatorAvail(int elevatorAvail) {
+	public void setElevatorAvail(String elevatorAvail) {
 		this.elevatorAvail = elevatorAvail;
 	}
-	public int getBalconyAvail() {
+	public String getBalconyAvail() {
 		return balconyAvail;
 	}
-	public void setBalconyAvail(int balconyAvail) {
+	public void setBalconyAvail(String balconyAvail) {
 		this.balconyAvail = balconyAvail;
 	}
-	public int getBuiltInAvail() {
+	public String getBuiltInAvail() {
 		return builtInAvail;
 	}
-	public void setBuiltInAvail(int builtInAvail) {
+	public void setBuiltInAvail(String builtInAvail) {
 		this.builtInAvail = builtInAvail;
 	}
 	public String getOptions() {
@@ -176,10 +176,10 @@ public class Property {
 	public void setOptions(String options) {
 		this.options = options;
 	}
-	public int getLoanAvail() {
+	public String getLoanAvail() {
 		return loanAvail;
 	}
-	public void setLoanAvail(int loanAvail) {
+	public void setLoanAvail(String loanAvail) {
 		this.loanAvail = loanAvail;
 	}
 	public String getDetailTitle() {

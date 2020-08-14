@@ -101,35 +101,73 @@ $(document).ready(function(){
     });
 
     // 기본 정보
-    let inputSupplyPyeong = $('input[name=supply-pyeong');
-    let inputSupplyM2 = $('input[name=supply-m2');
-    let inputExclusivePyeong = $('input[name=exclusive-pyeong');
-    let inputExclusiveM2 = $('input[name=exclusive-m2');
+    let inputSupplyPyeong = $('input[name=supply-pyeong]');
+    let inputSupplyM2 = $('input[name=supply-m2]');
+    let inputExclusivePyeong = $('input[name=exclusive-pyeong]');
+    let inputExclusiveM2 = $('input[name=exclusive-m2]');
     inputSupplyPyeong.change(function() {
-        $(this).attr('value', $(this).val());
+        inputSupplyPyeong.attr('value', inputSupplyPyeong.val());
     });
     inputSupplyM2.change(function() {
-        $(this).attr('value', $(this).val());
+        inputSupplyM2.attr('value', inputSupplyM2.val());
     });
     inputExclusivePyeong.change(function() {
-        $(this).attr('value', $(this).val());
+        inputExclusivePyeong.attr('value', inputExclusivePyeong.val());
     });
     inputExclusiveM2.change(function() {
-        $(this).attr('value', $(this).val());
+        inputExclusiveM2.attr('value', inputExclusiveM2.val());
+    });    
+
+    // 추가 정보
+    // if($('input[name=no-maintenance]').prop('checked') == true) {
+    //     //$('.fee-check').remove();
+    //     alert('hi');
+    // }
+    // let maintenanceOption = 
+    // `<label class="fee-check">
+    //     <input type="checkbox" name="maintenance-option">
+    //     <p>협의가능</p>
+    // </label>`;
+    let feeCheck = $(".fee-check");
+    let maintenanceFee = $('#maintenance-fee');
+    let inputNoMaintenace = $('input[name=no-maintenance]');
+    inputNoMaintenace.change(function() {
+        if(inputNoMaintenace.prop('checked') == true) {
+            feeCheck[0].remove();
+            maintenanceFee.prop('disabled', true);
+        } else {
+            feeCheck[1].before(feeCheck[0]);
+            maintenanceFee.prop('disabled', false);
+        }
     });
     
+    let parkingAvail = $('input[name=parking]');
+    let inputParkingFee = $('input[name=parking-fee]');
+    parkingAvail.change(function() {
+        if (parkingAvail.prop('checked') == true) {
+            inputParkingFee.attr('value', '');
+            inputParkingFee.prop('disabled', true);
+        } else {
+            inputParkingFee.prop('disabled', false);
+            inputParkingFee.attr('value', inputParkingFee.val());
+        }
+    });
 
-
+    maintenanceFee.change(function() {
+        maintenanceFee.attr('value', maintenanceFee.val());
+    });
 
 
     $(document).on('click', '.submit', function() {
-        // 매물 종류
+        // 주소, 입주 가능일 - not yet
+
+        /* 매물 종류 */
         let selectedVal = $('input[name=room_type]:checked').val();
         data.set('roomType', selectedVal);
         selectedVal = $('input[name=building_type]:checked').val();
         data.set('buildingType', selectedVal);
 
-        // 거래 정보(전월세)
+        /* 거래 정보(전월세) */
         let dataArray = new Array();
         inputMonthlyDeposit.each(function(index){
             dataArray.push($(this).val());
@@ -144,7 +182,7 @@ $(document).ready(function(){
             data.set('deposit', inputDeposit.val());
         }
 
-        // 기본 정보
+        /* 기본 정보 */
         data.set('supplyPyeong', inputSupplyPyeong.val());
         data.set('supplyM2', inputSupplyM2.val());
         data.set('exclusivePyeong', inputExclusivePyeong.val());
@@ -157,6 +195,19 @@ $(document).ready(function(){
 
         selectedVal = $('#heat option:selected').val();
         data.set('heat', selectedVal);
+
+        /* 추가 정보 */
+        // 관리비
+        data.set('maintenanceFee', maintenanceFee.val());
+        // 관리비 항목
+        let maintenanceItems = $('input[name=maintenance-items]:checked').map(function() {
+            return this.value;
+        }).get().join();
+        data.set('maintenanceItems', maintenanceItems);
+        // 주차 여부
+        selectedVal = $('input[name=parking]:checked').val();
+        data.set('parkingAvail', selectedVal);
+        data.set('parkingFee', inputParkingFee.val());
 
         console.log(JSON.stringify(Array.from(data.entries())));
     });
