@@ -1,0 +1,484 @@
+@import url('http://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body {
+    margin : 0;
+    padding : 0;
+    font-family: 'Hind Siliguri', sans-serif;;
+}
+
+.detail-head{
+    width : 100%;
+}
+
+.detail-head .content-container{
+    width : 1180px;
+    margin : 0 auto;
+}
+
+.detail-head .summary{
+    display : flex;
+    width : 100%;
+    padding-top : 35px;
+    padding-left: 0;
+    margin-top : 0;
+    margin-bottom : 0;
+    padding-bottom : 35px;
+    align-items: center;
+}
+
+.summary li:nth-of-type(1){
+    padding-right : 20px;
+    overflow: hidden;
+    border-right : 1px solid rgb(235, 235, 235);
+}
+
+.summary li:nth-of-type(1)>p{
+    font-size: 15px;
+    line-height: 20px;
+    color : rgb(34, 34, 34);
+    margin-bottom: 6px;
+}
+
+.summary .head-info{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head-info>span{
+    margin-left : 5px;
+}
+
+
+.summary li:nth-of-type(2){
+    overflow: hidden;
+    border-right : 1px solid rgb(235, 235, 235);
+    padding-left : 20px;
+    padding-right : 20px;
+}
+
+.summary li:nth-of-type(2)>p{
+    font-size: 15px;
+    line-height: 20px;
+    color : rgb(34, 34, 34);
+    margin-bottom: 6px;
+}
+
+.summary li:nth-of-type(3){
+    color : red;
+    flex : 1 1 0;
+    display : flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left : 20px;
+}
+
+.summary .office-contact{
+    display : flex;
+    align-items: center;
+    justify-content: center;;
+}
+
+.office-contact>p{
+    color : rgb(34, 34, 34);
+    font-size: 14px;
+    padding : 4px;
+}
+
+.office-contact>button{
+    border : 0;
+    width : 80px;
+    height : 30px;
+    display : flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 40px;
+    background : #aed1d685;
+    color : rgb(34, 34, 34);
+    margin : 0 10px;
+    transition : 0.3s;
+}
+
+.office-contact>button:hover{
+    opacity: 70%;
+}
+
+.office-contact .fa{
+    font-size: 20px;
+}
+
+.head-btn{
+    display : flex;
+}
+
+.head-btn p{
+    display : inline-block;
+    padding : 0 20px;
+    border-right: 1px solid rgb(235, 235, 235);
+    color : rgb(34, 34, 34);
+}
+
+.head-btn .favorit>i{
+    cursor : pointer;
+    margin-right : 5px;
+}
+
+.heartclicked{
+    color : red;
+}
+
+.head-btn .copy{
+    cursor : pointer;
+}
+
+.head-btn button{
+    padding-left : 10px;
+    border : 0;
+    background : 0;
+    cursor : pointer;
+}
+
+.head-btn>button>i{
+    color : red;
+}
+
+.detail{
+    width : 100%;
+    overflow: hidden;
+}
+
+.detail .content-container{
+    width :1180px;
+    margin : 0 auto;
+}
+
+.confirm-bar{
+    height : 36px;
+    width: 100%;
+    display : flex;
+    align-items: center;
+    background : #658de4;
+    border-bottom: 1px solid black;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.confirm-bar p:nth-of-type(1){
+    background : #314570;
+    color : #fff;
+    padding-left : 10px;
+    height : 36px;
+    display : flex;
+    align-items: center;
+}
+
+.confirm-bar p:nth-of-type(1) span{
+    background : #314570;
+    padding : 0 10px;
+}
+
+.confirm-bar p:nth-of-type(2){
+    flex : 1 0;
+    padding-left : 10px;
+    color : #fff;
+    display : flex;
+    height: 36px;
+    align-items: center;
+}
+
+.detail #list{
+    margin : 0;
+    padding : 0;
+    display : flex;
+    flex-wrap: wrap;
+    width : 100%;
+}
+
+.detail #list li{
+    width : 25%;
+    display : flex;
+    align-items: center;
+    height : 50px;
+    border-bottom: 1px solid rgb(235, 235, 235);
+    line-height: 50px;
+}
+
+/* .detail #list li:before{
+    content : '¡¤';
+    margin-right : 5px;
+} */
+
+.detail #list li p{
+    color: rgb(136, 136, 136);
+    font-size: 14px;
+    width : 100px;
+}
+
+.detail #list div{
+    color: rgb(34, 34, 34);
+    font-size: 14px;
+}
+
+.detail #list li:nth-of-type(4) div{
+    display : flex;
+    align-items: center;
+}
+
+#list .list-direction{
+    font-size: 12px;
+}
+
+.image-view{
+    width : 100%;
+}
+
+.image-view .content-container{
+    width : 1180px;
+    margin : 0 auto;
+}
+
+.image-wrap{
+    width : 100%;
+    height : 420px;
+    display : flex;
+    margin : 50px 0;
+}
+
+.bigpic{
+    width : 50%;
+    height : 100%;
+    cursor: pointer;
+    background : url(../images/dabang-images-easy001.jpg) center center / cover no-repeat;;
+}
+
+.smallpic-box{
+    width : 50%;
+    display : flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.smallpic-box div:nth-of-type(1){
+    width : 50%;
+    height : 50%;
+    background : url(../images/dabang-images002.png) center center / cover no-repeat;;
+}
+
+.smallpic-box div:nth-of-type(2){
+    width : 50%;
+    height : 50%;
+    background : url(../images/dabang-images-easy003.jpg) center center / cover no-repeat;;
+}
+
+.smallpic-box div:nth-of-type(3){
+    width : 50%;
+    height : 50%;
+    background : url(../images/dabang-images-easy004.jpg) center center / cover no-repeat;;
+}
+
+.smallpic-box div:nth-of-type(4){
+    width : 50%;
+    height : 50%;
+    background : url(../images/dabang-images001.png) center center / cover no-repeat;;
+}
+
+.memo {
+    width : 100%;
+}
+
+.memo .content-container{
+    width : 1180px;
+    margin : 0 auto;
+}
+
+.memo-wrap{
+    width: 100%;
+    min-height: 260px;
+    padding-bottom: 130px;
+    position: relative;
+}
+
+.memo-wrap>h1{
+    width: 520px;
+    height: 130px;
+    padding-right: 150px;
+    color: rgb(34, 34, 34);
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 36px;
+    float : left;
+}
+
+.memo-detail{
+    float: left;
+    width: calc(660px);
+    padding-right: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.memo-detail>div{
+    width: 100%;
+    color: rgb(102, 102, 102);
+    font-size: 16px;
+    line-height: 26px;
+    white-space: pre-wrap;
+    overflow: hidden;
+}
+
+.show-btn{
+    position : absolute;
+    left: 520px;
+    bottom: 76px;
+    border: 0;
+    background : 0;
+    color : #314570;
+}
+
+.detail-box{
+    width : 100%;
+}
+
+.detail-bar{
+    width : 100%;
+    border-top: 1px solid rgb(235, 235, 235);
+}
+
+.detail-bar .content-container{
+    width : 1180px;
+    height: 58px;
+    margin : 0 auto;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.detail-bar a{
+    width : 25%;
+    height: 100%;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(235, 235, 235);
+    color : rgb(136, 136, 136);
+}
+
+.price {
+    width : 100%;
+}
+
+.price .content-container{
+    width : 1180px;
+    margin : 0 auto;
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+
+.price h1{
+    color: rgb(34, 34, 34);
+    font-size: 28px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 41px;
+}
+
+.price .priceWrap{
+    width: 850px;
+    margin: 30px auto 0px;
+    border-top: 1px solid rgb(204, 204, 204);
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+.priceWrap>thead>tr>th{
+    height: 50px;
+    color: rgb(34, 34, 34);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.priceWrap>thead>tr>th+th{
+    border-left: 1px solid rgb(238, 238, 238);
+}
+
+.priceWrap>thead>tr{
+    border-bottom: 1px solid rgb(238, 238, 238);
+}
+
+.priceWrap>tbody>tr>td{
+    padding-top : 20px;
+    padding-bottom : 20px;
+}
+
+.priceWrap>tbody>tr>td+td{
+    border-left: 1px solid rgb(238, 238, 238);
+}
+
+.priceWrap>tbody>tr>td>p{
+    color: rgb(68, 68, 68);
+    font-size: 15px;
+    text-align: center;
+}
+
+.bill-price{
+    display : flex;
+    flex-direction: column;
+    width : 100%;
+    height : 100%;
+}
+
+.bill-price div{
+    text-align: center;
+    color: rgb(68, 68, 68);
+}
+
+.bill-price div:nth-of-type(1){
+    padding-bottom : 20px;
+}
+
+.bill-price div:nth-of-type(2){
+    padding-top : 20px;
+    border-top : 1px dashed rgb(68, 68, 68);
+}
+
+.estimated{
+    width: 850px;
+    height: 138px;
+    border : 1px solid #314570;
+    margin : 30px auto 0;
+    padding : 0 55px;
+    border-radius: 5px;
+}
+
+.estimated>p{
+    width : 165px;
+    font-size: 18px;
+    color : #314570;
+    float : left;
+    line-height: 20px;
+}
+
+.estimated>div{
+    position: relative;
+    width: 573px;
+    padding-left: 40px;
+    font-size: 30px;
+    font-weight: 500;
+    color : #314570;
+    top : 50%;
+    left : 0;
+}
+
+.option{
+    width : 100%;
+}
+
+.option .content-container{
+    width: 1180px;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 120px;
+    margin: 0px auto;
+    border-top: 1px solid rgb(221, 221, 221);
+}
