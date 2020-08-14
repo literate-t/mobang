@@ -49,6 +49,11 @@ public class MobangController {
 		return "mobang.search.main";
 	}
 	
+	@GetMapping("detail")
+	public String detail() {
+		return "mobang.detail";
+	}
+	
 	@ResponseBody
 	@GetMapping("list")
 	public List<Position> list() {
