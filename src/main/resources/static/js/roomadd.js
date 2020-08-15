@@ -129,43 +129,46 @@ $(document).ready(function(){
     //     <p>협의가능</p>
     // </label>`;
     let feeCheck = $(".fee-check");
-    let maintenanceFee = $('#maintenance-fee');
+    let inputMaintenanceFee = $('#maintenance-fee');
     let inputNoMaintenace = $('input[name=no-maintenance]');
     inputNoMaintenace.change(function() {
         if(inputNoMaintenace.prop('checked') == true) {
             feeCheck[0].remove();
-            maintenanceFee.prop('disabled', true);
+            inputMaintenanceFee.val('');
+            inputMaintenanceFee.prop('disabled', true);
         } else {
             feeCheck[1].before(feeCheck[0]);
-            maintenanceFee.prop('disabled', false);
+            inputMaintenanceFee.prop('disabled', false);
         }
+    });
+
+    inputMaintenanceFee.change(function() {
+        inputMaintenanceFee.attr('value', inputMaintenanceFee.val());
     });
     
     let parkingAvail = $('input[name=parking]');
     let inputParkingFee = $('input[name=parking-fee]');
     parkingAvail.change(function() {
-        if (parkingAvail.prop('checked') == true) {
-            inputParkingFee.attr('value', '');
+        if ($('input[name=parking]:checked').val() === '불가능') {
+            //inputParkingFee.attr('value', '');                // not working
+            //$('input[name=parking-fee]').attr('value', '');   // not working
+            inputParkingFee.val('');                            // works!
+            //inputParkingFee.value = '';                         
             inputParkingFee.prop('disabled', true);
+            //alert(inputParkingFee.value);  // value를 이용하면 value로 꺼내면 된다                     
+            //alert(inputParkingFee.val());  // val()를 쓰면 val()로 꺼내고 다만, 필드 clear는 val('')만 된다 
         } else {
             inputParkingFee.prop('disabled', false);
             inputParkingFee.attr('value', inputParkingFee.val());
         }
     });
 
-    maintenanceFee.change(function() {
-        maintenanceFee.attr('value', maintenanceFee.val());
-    });
-
-
     $(document).on('click', '.submit', function() {
         // 주소, 입주 가능일 - not yet
 
         /* 매물 종류 */
-        let selectedVal = $('input[name=room_type]:checked').val();
-        data.set('roomType', selectedVal);
-        selectedVal = $('input[name=building_type]:checked').val();
-        data.set('buildingType', selectedVal);
+        data.set('roomType', $('input[name=room_type]:checked').val());
+        data.set('buildingType', $('input[name=building_type]:checked').val());
 
         /* 거래 정보(전월세) */
         let dataArray = new Array();
@@ -188,26 +191,43 @@ $(document).ready(function(){
         data.set('exclusivePyeong', inputExclusivePyeong.val());
         data.set('exclusiveM2', inputExclusiveM2.val());
 
-        selectedVal = $('select[name=building-floor]').val();
-        data.set('buildingFloor', selectedVal);
-        selectedVal = $('select[name=selected-floor]').val();
-        data.set('selectedFloor', selectedVal);
-
-        selectedVal = $('#heat option:selected').val();
-        data.set('heat', selectedVal);
+        data.set('buildingFloor', $('select[name=building-floor]').val());
+        data.set('selectedFloor', $('select[name=selected-floor]').val());
+        data.set('heat', $('#heat option:selected').val());
 
         /* 추가 정보 */
         // 관리비
-        data.set('maintenanceFee', maintenanceFee.val());
+        data.set('maintenanceFee', inputMaintenanceFee.val());
         // 관리비 항목
         let maintenanceItems = $('input[name=maintenance-items]:checked').map(function() {
             return this.value;
         }).get().join();
         data.set('maintenanceItems', maintenanceItems);
         // 주차 여부
-        selectedVal = $('input[name=parking]:checked').val();
-        data.set('parkingAvail', selectedVal);
+        data.set('parkingAvail', $('input[name=parking]:checked').val());
         data.set('parkingFee', inputParkingFee.val());
+        // 반려 동물
+        data.set('petsAvail', $('input[name=pets]:checked').val());
+        // 엘레베이터
+        data.set('elevatorAvail', $('input[name=elevator]:checked').val());
+        // 베란다/발코니
+        data.set('verandaAvail', $('input[name=veranda]:checked').val());
+        // 빌트인
+        data.set('builtInAvail', $('input[name=built-in]:checked').val());
+        // 옵션항목
+        let roomOptions = $('input[name=roomoptions]:checked').map(function() {
+            return this.value;
+        }).get().join();
+        data.set('roomOptions', roomOptions);
+        // 전세자금대출
+        data.set('loanAvail', $('input[name=loan]:checked').val());
+        // 상세설명
+        // 제목
+        data.set('title', $('input[name=title]').val());
+        // 상세설명
+        data.set('memo', $('input[name=memo]').val());
+        // 비공개 메모
+        data.set('privateMemo', $('input[name=private-memo]').val());
 
         console.log(JSON.stringify(Array.from(data.entries())));
     });

@@ -19,16 +19,16 @@ public class Property {
 	private int maintenanceFee;
 	private String maintenanceItems;
 	private String parkingAvail;
-	private String petAvail;
+	private String petsAvail;
 	private int parkingFee;
 	private String elevatorAvail;
-	private String balconyAvail;
+	private String verandaAvail;
 	private String builtInAvail;
-	private String options;
+	private String roomOptions;
 	private String loanAvail;
-	private String detailTitle;
-	private String detailBody;
-	private String notPublicMemo;
+	private String title;
+	private String memo;
+	private String privateMemo;
 	private String pictureLoc;
 	
 	public int getRoomType() {
@@ -141,10 +141,10 @@ public class Property {
 		this.parkingAvail = parkingAvail;
 	}
 	public String getPetAvail() {
-		return petAvail;
+		return petsAvail;
 	}
 	public void setPetAvail(String petAvail) {
-		this.petAvail = petAvail;
+		this.petsAvail = petAvail;
 	}
 	public int getParkingFee() {
 		return parkingFee;
@@ -159,10 +159,10 @@ public class Property {
 		this.elevatorAvail = elevatorAvail;
 	}
 	public String getBalconyAvail() {
-		return balconyAvail;
+		return verandaAvail;
 	}
 	public void setBalconyAvail(String balconyAvail) {
-		this.balconyAvail = balconyAvail;
+		this.verandaAvail = balconyAvail;
 	}
 	public String getBuiltInAvail() {
 		return builtInAvail;
@@ -171,10 +171,10 @@ public class Property {
 		this.builtInAvail = builtInAvail;
 	}
 	public String getOptions() {
-		return options;
+		return roomOptions;
 	}
-	public void setOptions(String options) {
-		this.options = options;
+	public void setOptions(String roomOptions) {
+		this.roomOptions = roomOptions;
 	}
 	public String getLoanAvail() {
 		return loanAvail;
@@ -183,22 +183,22 @@ public class Property {
 		this.loanAvail = loanAvail;
 	}
 	public String getDetailTitle() {
-		return detailTitle;
+		return title;
 	}
-	public void setDetailTitle(String detailTitle) {
-		this.detailTitle = detailTitle;
+	public void setDetailTitle(String title) {
+		this.title = title;
 	}
-	public String getDetailBody() {
-		return detailBody;
+	public String getMemo() {
+		return memo;
 	}
-	public void setDetailBody(String detailBody) {
-		this.detailBody = detailBody;
+	public void setDetailBody(String memo) {
+		this.memo = memo;
 	}
 	public String getNotPublicMemo() {
-		return notPublicMemo;
+		return privateMemo;
 	}
-	public void setNotPublicMemo(String notPublicMemo) {
-		this.notPublicMemo = notPublicMemo;
+	public void setNotPublicMemo(String privateMemo) {
+		this.privateMemo = privateMemo;
 	}
 	public String getPictureLoc() {
 		return pictureLoc;

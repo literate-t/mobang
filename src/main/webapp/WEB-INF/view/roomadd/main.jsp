@@ -290,11 +290,11 @@
 					<td>
 						<div class="pets">
 							<label class="radio-btn"> 
-								<input type="radio" name="pets"	checked>
+								<input type="radio" name="pets"	value="불가능" checked>
 								<p>불가능</p>
 							</label> 
 							<label class="radio-btn">
-								<input type="radio"	name="pets">
+								<input type="radio"	name="pets"	value="가능">
 								<p>가능</p>
 							</label>
 						</div>
@@ -305,11 +305,11 @@
 					<td>
 						<div class="elevator">
 							<label class="radio-btn"> 
-								<input type="radio"	name="elevator" checked>
+								<input type="radio"	name="elevator"	value="없음" checked>
 								<p>없음</p>
 							</label> 
 							<label class="radio-btn">
-								<input type="radio" name="elevator">
+								<input type="radio" name="elevator"	value="있음">
 								<p>있음</p>
 							</label>
 						</div>
@@ -318,11 +318,11 @@
 					<td>
 						<div class="veranda">
 							<label class="radio-btn"> 
-								<input type="radio" name="veranda" checked>
+								<input type="radio" name="veranda" value="없음" checked>
 								<p>없음</p>
 							</label> 
 							<label class="radio-btn"> 
-								<input type="radio"	name="veranda">
+								<input type="radio"	name="veranda" value="있음" >
 								<p>있음</p>
 							</label>
 						</div>
@@ -333,11 +333,11 @@
 					<td colspan="3">
 						<div class="built-in">
 							<label class="radio-btn">
-								<input type="radio" name="built-in" checked>
+								<input type="radio" name="built-in" value="없음" checked>
 								<p>없음</p>
 							</label> 
 							<label class="radio-btn"> 
-								<input type="radio" name="built-in">
+								<input type="radio" name="built-in" value="있음">
 								<p>있음</p>
 							</label>
 						</div>
@@ -348,41 +348,43 @@
 					<td colspan="3">
 						<div class="checkbox-wrap">
 							<label class="checkbox-btn">
-								<input type="checkbox" name="roomoption" checked>
-								<p>에이컨</p>
+								<input type="checkbox" name="roomoptions" value="에어컨" checked>
+								<p>에어컨</p>
 							</label> 
 							<label class="checkbox-btn"> 
-								<input type="checkbox" name="roomoption">
+								<input type="checkbox" name="roomoptions" value="세탁기">
 								<p>세탁기</p>
-							</label> <label class="checkbox-btn">
-								<input type="checkbox" name="roomoption">
+							</label> 
+							<label class="checkbox-btn">
+								<input type="checkbox" name="roomoptions" value="침대">
 								<p>침대</p>
-							</label> <label class="checkbox-btn"> 
-								<input type="checkbox" name="roomoption">
+							</label> 
+							<label class="checkbox-btn"> 
+								<input type="checkbox" name="roomoptions" value="책상">
 								<p>책상</p>
 							</label> 
 							<label class="checkbox-btn"> 
-								<input type="checkbox" name="roomoption">
+								<input type="checkbox" name="roomoptions" value="옷장">
 								<p>옷장</p>
 							</label> 
 							<label class="checkbox-btn"> 
-								<input type="checkbox" name="roomoption">
+								<input type="checkbox" name="roomoptions" value="TV">
 								<p>TV</p>
 							</label> 
 							<label class="checkbox-btn"> 
-								<input type="checkbox" name="roomoption">
+								<input type="checkbox" name="roomoptions" value="신발장">
 								<p>신발장</p>
 							</label>
 							<label class="checkbox-btn"> 
-								<input type="checkbox" name="roomoption">
+								<input type="checkbox" name="roomoptions" value="냉장고">
 								<p>냉장고</p>
 							</label> 
 							<label class="checkbox-btn"> 
-								<input type="checkbox" name="roomoption">
+								<input type="checkbox" name="roomoptions" value="가스레인지">
 								<p>가스레인지</p>
 							</label>
 							<label class="checkbox-btn">
-								<input type="checkbox" name="roomoption">
+								<input type="checkbox" name="roomoptions" value="인덕션">
 								<p>인덕션</p>
 							</label>
 						</div>
@@ -452,8 +454,7 @@
 					<div class="photo-file">
 						<button id="upload-phto" class="upload-btn">일반 사진 등록</button>
 						<div id="html5-container" class="html5">
-							<input id="html5" type="file" 
-							multiple accept=".jpg, .jpeg, .png"	tabindex="1">
+							<input id="html5" type="file" multiple accept=".jpg,.jpeg,.png" tabindex="1">
 						</div>
 					</div>
 				</div>
