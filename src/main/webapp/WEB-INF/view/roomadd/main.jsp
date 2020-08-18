@@ -42,14 +42,15 @@
 						<th class="table-head">건물유형</th>
 						<td class="roomtypetds">
 							<div class="buildingtype-btns">
-								<label class="radio-btn"> <input type="radio"
-									name="building_type" value="단독주택" checked>
+								<label class="radio-btn"> 
+									<input type="radio" name="building_type" value="단독주택" checked>
 									<p>단독주택</p>
-								</label> <label class="radio-btn"> <input type="radio"
-									name="building_type">
+								</label> <label class="radio-btn">
+									<input type="radio" name="building_type" value="다가구주택">
 									<p>다가구주택</p>
-								</label> <label class="radio-btn"> <input type="radio"
-									name="building_type">
+								</label> 
+								<label class="radio-btn"> 
+									<input type="radio" name="building_type" value="빌라/연립/다세대">
 									<p>빌라/연립/다세대</p>
 								</label>
 							</div>
@@ -147,13 +148,13 @@
 							<p>건물층수</p> 
 							<select name="building-floor">
 								<option>건물층수 선택</option>
-								<option value="1">1층</option>
-								<option value="2">2층</option>
-								<option value="3">3층</option>
-								<option value="4">4층</option>
-								<option value="5">5층</option>
-								<option value="6">6층</option>
-								<option value="7">7층</option>
+								<option value="1층">1층</option>
+								<option value="2층">2층</option>
+								<option value="3층">3층</option>
+								<option value="4층">4층</option>
+								<option value="5층">5층</option>
+								<option value="6층">6층</option>
+								<option value="7층">7층</option>
 							</select>
 						</td>
 					</tr>
@@ -167,15 +168,15 @@
 							<p>해당층수</p> 
 							<select name="selected-floor">
 								<option>해당층수 선택</option>
-								<option value="-1">반지층</option>
-								<option value="0">옥탑</option>
-								<option value="1">1층</option>
-								<option value="2">2층</option>
-								<option value="3">3층</option>
-								<option value="4">4층</option>
-								<option value="5">5층</option>
-								<option value="6">6층</option>
-								<option value="7">7층</option>
+								<option value="반지층">반지층</option>
+								<option value="옥탑">옥탑</option>
+								<option value="1층">1층</option>
+								<option value="2층">2층</option>
+								<option value="3층">3층</option>
+								<option value="4층">4층</option>
+								<option value="5층">5층</option>
+								<option value="6층">6층</option>
+								<option value="7층">7층</option>
 							</select>
 						</td>
 					</tr>
@@ -184,9 +185,9 @@
 						<td class="heating" colspan="3">
 							<select id="heat">
 								<option>난방종류 선택</option>
-								<option value="0">중앙난방</option>
-								<option value="1">지역난방</option>
-								<option value="2">개별난방</option>
+								<option value="중앙난방">중앙난방</option>
+								<option value="지역난방">지역난방</option>
+								<option value="개별난방">개별난방</option>
 							</select>
 						</td>
 					</tr>
@@ -209,14 +210,15 @@
 					<th class="table-head" rowspan="2">관리비</th>
 					<td class="management-row" colspan="3">
 						<div class="management-fee">
-							<input type="text">
+							<input type="text" id="maintenance-fee">
 							<p class="fee-text">만원</p>
 							<div class="checkwrap">
-								<label class="fee-check"> <input type="checkbox"
-									name="maintenance-option" value=checked>
+								<label class="fee-check">
+									<input type="checkbox" name="maintenance-option">
 									<p>협의가능</p>
-								</label> <label class="fee-check"> <input type="checkbox"
-									name="maintenance">
+								</label> 
+								<label class="fee-check">
+								<input type="checkbox" name="no-maintenance">
 									<p>관리비없음</p>
 								</label>
 							</div>
@@ -234,26 +236,32 @@
 								<p>관리비항목</p>
 								<p>(다중선택가능)</p>
 							</div>
-							<label class="checkbox-btn"> <input type="checkbox"
-								name="maintenance-items">
+							<label class="checkbox-btn"> 
+								<input type="checkbox" name="maintenance-items" value="internet" checked>
 								<p>인터넷</p>
-							</label> <label class="checkbox-btn"> <input type="checkbox"
-								name="maintenance-items" checked>
+							</label> 
+							<label class="checkbox-btn"> 
+								<input type="checkbox" name="maintenance-items" value="tv">
 								<p>유선TV</p>
-							</label> <label class="checkbox-btn"> <input type="checkbox"
-								name="maintenance-items">
+							</label> 							
+							<label class="checkbox-btn"> 
+								<input type="checkbox" name="maintenance-items" value="cleaning">
 								<p>청소비</p>
-							</label> <label class="checkbox-btn"> <input type="checkbox"
-								name="maintenance-items">
+							</label>
+							<label class="checkbox-btn">
+								<input type="checkbox" name="maintenance-items" value="water">
 								<p>수도세</p>
-							</label> <label class="checkbox-btn"> <input type="checkbox"
-								name="maintenance-items">
+							</label> 
+							<label class="checkbox-btn">
+								<input type="checkbox" name="maintenance-items" value="gas">
 								<p>도시가스</p>
-							</label> <label class="checkbox-btn"> <input type="checkbox"
-								name="maintenance-items">
+							</label> 
+							<label class="checkbox-btn"> 
+								<input type="checkbox" name="maintenance-items" value="electricity">
 								<p>전기세</p>
-							</label> <label class="checkbox-btn"> <input type="checkbox"
-								name="maintenance-items">
+							</label>
+							<label class="checkbox-btn">
+								<input type="checkbox" name="maintenance-items" value="etc">
 								<p>기타</p>
 							</label>
 						</div>
@@ -264,15 +272,16 @@
 					<th class="table-head">주차여부</th>
 					<td>
 						<div class="parking">
-							<label class="radio-btn"> <input type="radio"
-								name="parking" checked>
+							<label class="radio-btn">
+								<input type="radio"	name="parking" value="불가능" checked>
 								<p>불가능</p>
-							</label> <label class="radio-btn"> <input type="radio"
-								name="parking">
+							</label> 
+							<label class="radio-btn">
+								<input type="radio" name="parking" value="가능" >
 								<p>가능</p>
 							</label>
 							<div class="parking-fee">
-								<input type="text">
+								<input type="text" name="parking-fee" disabled>
 								<p>만원</p>
 							</div>
 						</div>
@@ -280,11 +289,12 @@
 					<th class="table-head">반려동물</th>
 					<td>
 						<div class="pets">
-							<label class="radio-btn"> <input type="radio" name="pets"
-								checked>
+							<label class="radio-btn"> 
+								<input type="radio" name="pets"	value="불가능" checked>
 								<p>불가능</p>
-							</label> <label class="radio-btn"> <input type="radio"
-								name="pets">
+							</label> 
+							<label class="radio-btn">
+								<input type="radio"	name="pets"	value="가능">
 								<p>가능</p>
 							</label>
 						</div>
@@ -294,11 +304,12 @@
 					<th class="table-head">엘리베이터</th>
 					<td>
 						<div class="elevator">
-							<label class="radio-btn"> <input type="radio"
-								name="elevator" checked>
+							<label class="radio-btn"> 
+								<input type="radio"	name="elevator"	value="없음" checked>
 								<p>없음</p>
-							</label> <label class="radio-btn"> <input type="radio"
-								name="elevator">
+							</label> 
+							<label class="radio-btn">
+								<input type="radio" name="elevator"	value="있음">
 								<p>있음</p>
 							</label>
 						</div>
@@ -306,11 +317,12 @@
 					<th class="table-head">베란다/발코니</th>
 					<td>
 						<div class="veranda">
-							<label class="radio-btn"> <input type="radio"
-								name="veranda" checked>
+							<label class="radio-btn"> 
+								<input type="radio" name="veranda" value="없음" checked>
 								<p>없음</p>
-							</label> <label class="radio-btn"> <input type="radio"
-								name="veranda">
+							</label> 
+							<label class="radio-btn"> 
+								<input type="radio"	name="veranda" value="있음" >
 								<p>있음</p>
 							</label>
 						</div>
@@ -320,11 +332,12 @@
 					<th class="table-head">빌트인</th>
 					<td colspan="3">
 						<div class="built-in">
-							<label class="radio-btn"> <input type="radio"
-								name="built-in" checked>
+							<label class="radio-btn">
+								<input type="radio" name="built-in" value="없음" checked>
 								<p>없음</p>
-							</label> <label class="radio-btn"> <input type="radio"
-								name="built-in">
+							</label> 
+							<label class="radio-btn"> 
+								<input type="radio" name="built-in" value="있음">
 								<p>있음</p>
 							</label>
 						</div>
@@ -334,35 +347,44 @@
 					<th class="table-head">옵션항목</th>
 					<td colspan="3">
 						<div class="checkbox-wrap">
-							<label class="checkbox-btn"> <input type="checkbox"
-								name="roomoption" checked>
-								<p>에이컨</p>
-							</label> <label class="checkbox-btn"> <input type="checkbox"
-								name="roomoption">
+							<label class="checkbox-btn">
+								<input type="checkbox" name="roomoptions" value="에어컨" checked>
+								<p>에어컨</p>
+							</label> 
+							<label class="checkbox-btn"> 
+								<input type="checkbox" name="roomoptions" value="세탁기">
 								<p>세탁기</p>
-							</label> <label class="checkbox-btn"> <input type="checkbox"
-								name="roomoption">
+							</label> 
+							<label class="checkbox-btn">
+								<input type="checkbox" name="roomoptions" value="침대">
 								<p>침대</p>
-							</label> <label class="checkbox-btn"> <input type="checkbox"
-								name="roomoption">
+							</label> 
+							<label class="checkbox-btn"> 
+								<input type="checkbox" name="roomoptions" value="책상">
 								<p>책상</p>
-							</label> <label class="checkbox-btn"> <input type="checkbox"
-								name="roomoption">
+							</label> 
+							<label class="checkbox-btn"> 
+								<input type="checkbox" name="roomoptions" value="옷장">
 								<p>옷장</p>
-							</label> <label class="checkbox-btn"> <input type="checkbox"
-								name="roomoption">
+							</label> 
+							<label class="checkbox-btn"> 
+								<input type="checkbox" name="roomoptions" value="TV">
 								<p>TV</p>
-							</label> <label class="checkbox-btn"> <input type="checkbox"
-								name="roomoption">
+							</label> 
+							<label class="checkbox-btn"> 
+								<input type="checkbox" name="roomoptions" value="신발장">
 								<p>신발장</p>
-							</label> <label class="checkbox-btn"> <input type="checkbox"
-								name="roomoption">
+							</label>
+							<label class="checkbox-btn"> 
+								<input type="checkbox" name="roomoptions" value="냉장고">
 								<p>냉장고</p>
-							</label> <label class="checkbox-btn"> <input type="checkbox"
-								name="roomoption">
+							</label> 
+							<label class="checkbox-btn"> 
+								<input type="checkbox" name="roomoptions" value="가스레인지">
 								<p>가스레인지</p>
-							</label> <label class="checkbox-btn"> <input type="checkbox"
-								name="roomoption">
+							</label>
+							<label class="checkbox-btn">
+								<input type="checkbox" name="roomoptions" value="인덕션">
 								<p>인덕션</p>
 							</label>
 						</div>
@@ -372,11 +394,12 @@
 					<th class="table-head">전세자금대출</th>
 					<td colspan="3">
 						<div class="loan">
-							<label class="radio-btn"> <input type="radio" name="loan"
-								checked>
+							<label class="radio-btn">
+								<input type="radio" name="loan"	checked>
 								<p>불가능</p>
-							</label> <label class="radio-btn"> <input type="radio"
-								name="loan">
+							</label> 
+							<label class="radio-btn">
+								<input type="radio"	name="loan">
 								<p>가능</p>
 							</label>
 						</div>
@@ -391,18 +414,21 @@
 			<table class="detail-table">
 				<tr>
 					<th class="table-head">제목</th>
-					<td><input class="detail-title" type="text" name="title">
+					<td>
+						<input class="detail-title" type="text" name="title">
 					</td>
 				</tr>
 				<tr>
 					<th class="table-head">상세설명</th>
-					<td class="detail-explanation"><input type="textarea"
-						class="detail-textarea" name="memo"></td>
+					<td class="detail-explanation">
+						<input type="textarea" class="detail-textarea" name="memo">
+					</td>
 				</tr>
 				<tr>
 					<th class="table-head">비공개 메모</th>
-					<td class="private-memo"><input type="textarea"
-						class="private-textarea" name="private-memo"></td>
+					<td class="private-memo">
+						<input type="textarea" class="private-textarea" name="private-memo">
+					</td>
 				</tr>
 			</table>
 		</div>
@@ -428,8 +454,7 @@
 					<div class="photo-file">
 						<button id="upload-phto" class="upload-btn">일반 사진 등록</button>
 						<div id="html5-container" class="html5">
-							<input id="html5" type="file" multiple accept=".jpg, .jpeg, .png"
-								tabindex="1">
+							<input id="html5" type="file" multiple accept=".jpg,.jpeg,.png" tabindex="1">
 						</div>
 					</div>
 				</div>

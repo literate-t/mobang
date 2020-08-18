@@ -5,30 +5,30 @@ public class Property {
 	private int buildingType;	// 0: 단독주택, 1:다가구주택
 	private String address;		
 	private int dealType;
-	private String monthlyDeposit;
+	private String[] monthlyDeposit;
 	private String monthlyPrice;
 	private String deposit;
 	private double supplyPyeong;
 	private double supplyM2;
-	private int buildingFloor;
+	private String buildingFloor;
 	private double exclusivePyeong;
 	private double exclusiveM2;
-	private int selectedFloor;
-	private int heat;
-	private int moveInto;
+	private String selectedFloor;
+	private String heat;
+	private String moveInto;
 	private int maintenanceFee;
 	private String maintenanceItems;
-	private int parkingAvail;
-	private int petAvail;
+	private String parkingAvail;
+	private String petsAvail;
 	private int parkingFee;
-	private int elevatorAvail;
-	private int balconyAvail;
-	private int builtInAvail;
-	private String options;
-	private int loanAvail;
-	private String detailTitle;
-	private String detailBody;
-	private String notPublicMemo;
+	private String elevatorAvail;
+	private String verandaAvail;
+	private String builtInAvail;
+	private String roomOptions;
+	private String loanAvail;
+	private String title;
+	private String memo;
+	private String privateMemo;
 	private String pictureLoc;
 	
 	public int getRoomType() {
@@ -56,10 +56,10 @@ public class Property {
 		this.dealType = dealType;
 	}
 	
-	public String getMonthlyDeposit() {
+	public String[] getMonthlyDeposit() {
 		return monthlyDeposit;
 	}
-	public void setMonthlyDeposit(String monthlyDeposit) {
+	public void setMonthlyDeposit(String[] monthlyDeposit) {
 		this.monthlyDeposit = monthlyDeposit;
 	}
 	public String getMonthlyPrice() {
@@ -86,10 +86,10 @@ public class Property {
 	public void setSupplyM2(double supplyM2) {
 		this.supplyM2 = supplyM2;
 	}
-	public int getBuildingFloor() {
+	public String getBuildingFloor() {
 		return buildingFloor;
 	}
-	public void setBuildingFloor(int buildingFloor) {
+	public void setBuildingFloor(String buildingFloor) {
 		this.buildingFloor = buildingFloor;
 	}
 	public double getExclusivePyeong() {
@@ -104,22 +104,22 @@ public class Property {
 	public void setExclusiveM2(double exclusiveM2) {
 		this.exclusiveM2 = exclusiveM2;
 	}
-	public int getSelectedFloor() {
+	public String getSelectedFloor() {
 		return selectedFloor;
 	}
-	public void setSelectedFloor(int selectedFloor) {
+	public void setSelectedFloor(String selectedFloor) {
 		this.selectedFloor = selectedFloor;
 	}
-	public int getHeat() {
+	public String getHeat() {
 		return heat;
 	}
-	public void setHeat(int heat) {
+	public void setHeat(String heat) {
 		this.heat = heat;
 	}
-	public int getMoveInto() {
+	public String getMoveInto() {
 		return moveInto;
 	}
-	public void setMoveInto(int moveInto) {
+	public void setMoveInto(String moveInto) {
 		this.moveInto = moveInto;
 	}
 	public int getMaintenanceFee() {
@@ -134,17 +134,17 @@ public class Property {
 	public void setMaintenanceItems(String maintenanceItems) {
 		this.maintenanceItems = maintenanceItems;
 	}
-	public int getParkingAvail() {
+	public String getParkingAvail() {
 		return parkingAvail;
 	}
-	public void setParkingAvail(int parkingAvail) {
+	public void setParkingAvail(String parkingAvail) {
 		this.parkingAvail = parkingAvail;
 	}
-	public int getPetAvail() {
-		return petAvail;
+	public String getPetAvail() {
+		return petsAvail;
 	}
-	public void setPetAvail(int petAvail) {
-		this.petAvail = petAvail;
+	public void setPetAvail(String petAvail) {
+		this.petsAvail = petAvail;
 	}
 	public int getParkingFee() {
 		return parkingFee;
@@ -152,53 +152,53 @@ public class Property {
 	public void setParkingFee(int parkingFee) {
 		this.parkingFee = parkingFee;
 	}
-	public int getElevatorAvail() {
+	public String getElevatorAvail() {
 		return elevatorAvail;
 	}
-	public void setElevatorAvail(int elevatorAvail) {
+	public void setElevatorAvail(String elevatorAvail) {
 		this.elevatorAvail = elevatorAvail;
 	}
-	public int getBalconyAvail() {
-		return balconyAvail;
+	public String getBalconyAvail() {
+		return verandaAvail;
 	}
-	public void setBalconyAvail(int balconyAvail) {
-		this.balconyAvail = balconyAvail;
+	public void setBalconyAvail(String balconyAvail) {
+		this.verandaAvail = balconyAvail;
 	}
-	public int getBuiltInAvail() {
+	public String getBuiltInAvail() {
 		return builtInAvail;
 	}
-	public void setBuiltInAvail(int builtInAvail) {
+	public void setBuiltInAvail(String builtInAvail) {
 		this.builtInAvail = builtInAvail;
 	}
 	public String getOptions() {
-		return options;
+		return roomOptions;
 	}
-	public void setOptions(String options) {
-		this.options = options;
+	public void setOptions(String roomOptions) {
+		this.roomOptions = roomOptions;
 	}
-	public int getLoanAvail() {
+	public String getLoanAvail() {
 		return loanAvail;
 	}
-	public void setLoanAvail(int loanAvail) {
+	public void setLoanAvail(String loanAvail) {
 		this.loanAvail = loanAvail;
 	}
 	public String getDetailTitle() {
-		return detailTitle;
+		return title;
 	}
-	public void setDetailTitle(String detailTitle) {
-		this.detailTitle = detailTitle;
+	public void setDetailTitle(String title) {
+		this.title = title;
 	}
-	public String getDetailBody() {
-		return detailBody;
+	public String getMemo() {
+		return memo;
 	}
-	public void setDetailBody(String detailBody) {
-		this.detailBody = detailBody;
+	public void setDetailBody(String memo) {
+		this.memo = memo;
 	}
 	public String getNotPublicMemo() {
-		return notPublicMemo;
+		return privateMemo;
 	}
-	public void setNotPublicMemo(String notPublicMemo) {
-		this.notPublicMemo = notPublicMemo;
+	public void setNotPublicMemo(String privateMemo) {
+		this.privateMemo = privateMemo;
 	}
 	public String getPictureLoc() {
 		return pictureLoc;
