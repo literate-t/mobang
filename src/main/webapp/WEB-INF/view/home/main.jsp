@@ -15,76 +15,77 @@
 	</div>
 	<!-- ========================main 2 /main-firstwrap================================= -->
 	<div class="easy-search">
-		<div class="content-container">
-			<div class="easy-title">
-				<span>쉬운 방찾기</span>
-				<p>방 찾기 초보를 위한 초간단 솔루션!</p>
-			</div>
-			<div class="card-wrap">
-				<div class="card-box">
-					<a class="card" href="">
-						<div class="card-container">
-							<div class="image-box1"></div>
-							<div class="text-box">
-								<p>월세+관리비</p>
-								<p>월 50이하 원룸</p>
-							</div>
-						</div>
-					</a> <a class="card" href="">
-						<div class="card-container">
-							<div class="image-box2"></div>
-							<div class="text-box">
-								<p>보증금</p>
-								<p>500 이하 원룸</p>
-							</div>
-						</div>
-					</a> <a class="card" href="">
-						<div class="card-container">
-							<div class="image-box3"></div>
-							<div class="text-box">
-								<p>반려동물</p>
-								<p>가능한 원룸</p>
-							</div>
-						</div>
-					</a> <a class="card" href="">
-						<div class="card-container">
-							<div class="image-box4"></div>
-							<div class="text-box">
-								<p>낭만적인</p>
-								<p>옥탑방 원룸</p>
-							</div>
-						</div>
-					</a> <a class="card" href="">
-						<div class="card-container">
-							<div class="image-box5"></div>
-							<div class="text-box">
-								<p>2억이하</p>
-								<p>전세 투쓰리룸</p>
-							</div>
-						</div>
-					</a> <a class="card" href="">
-						<div class="card-container">
-							<div class="image-box6"></div>
-							<div class="text-box">
-								<p>전세자금대출</p>
-								<p>가능한 투쓰리룸</p>
-							</div>
-						</div>
-					</a>
-				</div>
-				<button class="next-btn">
-					<svg width="10" height="16" viewBox="0 0 10 16">
-                            <path fill="none" fill-rule="evenodd"
-							stroke="#666" d="M2 14l6-6-6-6"></path>
-                        </svg>
-				</button>
-				<div class="pagewrap">
-					<p class="pagenums-one">01</p>
-					<p class="pagenums-two">02</p>
-				</div>
-			</div>
-		</div>
-	</div>
+            <div class="content-container">
+                <div class="easy-title">
+                    <span>쉬운 방찾기</span>
+                    <p>방 찾기 초보를 위한 초간단 솔루션!</p>
+                </div>
+                <div class="card-wrap">
+                    <input type="radio" name = "tabs" id = "tab1" checked>
+                    <input type="radio" name = "tabs" id = "tab2">
+                    <div class="card-box">
+                        <a class="card" href="">
+                            <div class="card-container">
+                                <div class="image-box1"></div>
+                                <div class="text-box">
+                                    <p>월세+관리비</p>
+                                    <p>월 50이하 원룸</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card" href="">
+                            <div class="card-container">
+                                <div class="image-box2"></div>
+                                <div class="text-box">
+                                    <p>보증금</p>
+                                    <p>500 이하 원룸</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card" href="">
+                            <div class="card-container">
+                                <div class="image-box3"></div>
+                                <div class="text-box">
+                                    <p>반려동물</p>
+                                    <p>가능한 원룸</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card" href="">
+                            <div class="card-container">
+                                <div class="image-box4"></div>
+                                <div class="text-box">
+                                    <p>낭만적인</p>
+                                    <p>옥탑방 원룸</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card" href="">
+                            <div class="card-container">
+                                <div class="image-box5"></div>
+                                <div class="text-box">
+                                    <p>2억이하</p>
+                                    <p>전세 투쓰리룸</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card" href="">
+                            <div class="card-container">
+                                <div class="image-box6"></div>
+                                <div class="text-box">
+                                    <p>전세자금대출</p>
+                                    <p>가능한 투쓰리룸</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class = "slide-btns">
+                        <label for = "tab1">01</label>
+                        <label for = "tab2">02</label>
+                    </div>
+                </div>
+            </div>
+        </div>
 	</div>
 
 	<!-- ========================main 3-1 /main-secondwrap(recent-room)================================= -->
@@ -160,43 +161,51 @@
 
 	<!-- ========================main 4 /main-thirdwrap(room-guide)================================= -->
 	<div class="main-guide">
+		<input type = "radio" name = "guide" id = "guide-btn1" checked>
+		<input type = "radio" name = "guide" id = "guide-btn2">
 		<div class="content-container">
 			<div class="guide-title">부동산 가이드</div>
-			<div class="guide-box">
-				<a class="guide-card">
-					<h1>다방 이야기</h1>
-					<div class="text-box">
-						<p>다방</p>
-						<p>허위매물 예방 5계명</p>
-					</div> <!-- <svg></svg> -->
-				</a> <a class="guide-card">
-					<h1>부동산 상식</h1>
-					<div class="text-box">
-						<p>알아두면 좋은</p>
-						<p>부동산 용어</p>
-					</div> <!-- <svg></svg> -->
-				</a> <a class="guide-card">
-					<h1>부동산 상식</h1>
-					<div class="text-box">
-						<p>임대차 계약서</p>
-						<p>작성 시</p>
-						<p>알아둬야 할 것</p>
-					</div> <!-- <svg></svg> -->
-				</a> <a class="guide-card">
-					<h1>부동산 상식</h1>
-					<div class="text-box">
-						<p>어쩌고 저쩌고</p>
-						<p>대한민국</p>
-						<p>땅부자 건물부자</p>
-					</div> <!-- <svg></svg> -->
-				</a> <a class="guide-card">
-					<h1>생활꿀팁</h1>
-					<div class="text-box">
-						<p>이사준비</p>
-						<p>이사체크 리스트</p>
-					</div> <!-- <svg></svg> -->
-				</a>
+			<div class = "guide-slide">
+				<div class="guide-box">
+					<a class="guide-card" href = "https://post.naver.com/viewer/postView.nhn?volumeNo=27011368&memberNo=2120568">
+						<h1>다방 이야기</h1>
+						<div class="text-box">
+							<p>다방</p>
+							<p>허위매물 예방 5계명</p>
+						</div> <!-- <svg></svg> -->
+					</a> <a class="guide-card" href = "https://post.naver.com/viewer/postView.nhn?volumeNo=26067452&memberNo=2120568">
+						<h1>부동산 상식</h1>
+						<div class="text-box">
+							<p>알아두면 좋은</p>
+							<p>부동산 용어</p>
+						</div> <!-- <svg></svg> -->
+					</a> <a class="guide-card" href = "https://post.naver.com/viewer/postView.nhn?volumeNo=26596142&memberNo=2120568">
+						<h1>부동산 상식</h1>
+						<div class="text-box">
+							<p>임대차 계약서</p>
+							<p>작성 시</p>
+							<p>알아둬야 할 것</p>
+						</div> <!-- <svg></svg> -->
+					</a> <a class="guide-card" href = "https://post.naver.com/viewer/postView.nhn?volumeNo=26344001&memberNo=2120568">
+						<h1>부동산 상식</h1>
+						<div class="text-box">
+							<p>알아두면 좋은</p>
+							<p>만19세~34세</p>
+							<p>청년 주거 지원 정책</p>
+						</div> <!-- <svg></svg> -->
+					</a> <a class="guide-card" href= "https://post.naver.com/viewer/postView.nhn?volumeNo=25389507&memberNo=2120568">
+						<h1>생활꿀팁</h1>
+						<div class="text-box">
+							<p>이사준비</p>
+							<p>이사체크 리스트</p>
+						</div> <!-- <svg></svg> -->
+					</a>
+				</div>
 			</div>
+		</div>
+		<div class = "guide-next">
+			<label for = "guide-btn1">01</label>
+			<label for = "guide-btn2">02</label>
 		</div>
 	</div>
 	<!-- ========================main 5 /main-table================================= -->

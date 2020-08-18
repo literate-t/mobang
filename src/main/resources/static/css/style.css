@@ -88,12 +88,6 @@ input {
     outline : none;
 }
 
-
-/* input[type="textarea"]:focus{
-    border : 0;
-    box-shadow: 0 0 10px #12295850;
-} */
-
 input[type="checkbox"]{
     cursor : pointer;
 }
