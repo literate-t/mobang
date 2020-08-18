@@ -34,12 +34,12 @@ public class MobangController {
 	
 	@GetMapping("login")
 	public String login() {
-		return "inc/login/login";
+		return "inc/member/login";
 	}
 	
 	@GetMapping("signup")
 	public String signup() {
-		return "inc/login/signup";
+		return "inc/member/signup";
 	}
 	
 	@GetMapping("search")
